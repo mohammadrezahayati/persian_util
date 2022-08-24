@@ -1,6 +1,6 @@
 {
   "name": "persian_util",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "src/index",
   "scripts": {
@@ -8,10 +8,7 @@
     "build": "tsc",
     "watch": "tsc -w"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mohammadrezahayati/persian_util.git"
-  },
+  "repository": "git+https://github.com/mohammadrezahayati/persian_util.git",
   "keywords": [
     "persian_util"
   ],
