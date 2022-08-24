@@ -1,2 +1,2 @@
-export declare const ChangePersianToEnglish: (number: number) => number | undefined;
-export declare const CheckPersianNumber: (number: string) => boolean | undefined;
+export declare const ChangePersianNumberToEnglish: (number: string) => string | undefined;
+export declare const CheckPersianPhone: (number: string) => boolean | undefined;
