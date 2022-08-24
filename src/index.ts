@@ -2,10 +2,10 @@
 
 
 //This Function get a persian @number and change it to english @number and return it.
-export const ChangePersianToEnglish =(number:number) :number | undefined =>{
+export const ChangePersianNumberToEnglish =(number : string) : string | undefined =>{
     if(!number) return;
-    
-    return;
+    const res =  number.replace(/[۰-۹]/g, (d: string) => '۰۱۲۳۴۵۶۷۸۹'.indexOf(d).toString())
+    return res;
 }
 
 //This function get a persian @number and check it if valid or not and return boolean
@@ -21,7 +21,9 @@ export const CheckPersianPhone =(number:string): boolean | undefined =>{
 //     return "" as R;
 // }
 
-//console.log(CheckPersianNumber("+989123456789"))
+console.log(ChangePersianNumberToEnglish("۰۱۲۳۴۵۶۷۸۹"))
 
-
+//Todo: create function to find sheba logo;
+//Todo: create function to find card logo;
+//Todo: create function to find card logo;
 
