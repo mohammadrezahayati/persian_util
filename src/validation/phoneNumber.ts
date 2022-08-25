@@ -6,6 +6,6 @@ import {Fa_To_En} from "../parser";
  */
 export const CheckPersianPhone =(number:string): boolean =>{
     const numberRegex = /^(\+98|0098|98|0)?9\d{9}$/;
-    const res = numberRegex.test(Fa_To_En(number));
+    const res = numberRegex.test(number);
     return res;
 }
