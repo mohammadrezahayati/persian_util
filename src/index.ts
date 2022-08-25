@@ -1,3 +1,3 @@
 // made by @mohammadrezahayati
-export * from "./parser";
-export * from "./validation";
+export * as parses from "./parser";
+export * as validation from "./validation";
