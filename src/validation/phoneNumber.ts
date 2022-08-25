@@ -1,4 +1,4 @@
-import {Fa_To_En} from "@parser";
+import {Fa_To_En} from "../parser";
 /**
  * This function get a persian @number and check it if valid or not and return @boolean
  * @param number 
