@@ -9,9 +9,9 @@ describe('Operator Check', () => {
     expect(isMTN("+989333456787")).toBe(true);
   });
   test('MCI', () => {
-    expect(isMCI("00989213456787")).toBe(true);
+    expect(isMCI("00989163456787")).toBe(true);
   });
   test('Rightel', () => {
-    expect(isRightel("09113456787")).toBe(true);
+    expect(isRightel("09213456787")).toBe(true);
   });
 });
