@@ -1,5 +1,5 @@
-import {describe, expect, test} from '@jest/globals';
-import {isMCI,isMTN,isRightel} from '../';
+import { describe, expect, test } from '@jest/globals';
+import { isMCI, isMTN, isRightel } from '../';
 
 describe('Operator Check', () => {
   test('MCI', () => {
