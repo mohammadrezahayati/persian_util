@@ -7,4 +7,7 @@ describe("Parse Number", () => {
     test("Parse FA Number to EN", () => {
         expect(Fa_To_En("۰۹۱۲۳۴۵۶۷۸۹")).toBe("09123456789")
     })
+    test("Parse FA IP to EN", () => {
+        expect(Fa_To_En("۱۱۱.۱۱۱.۱۱۱.۱۱۱")).toBe("111.111.111.111")
+    })
 })
