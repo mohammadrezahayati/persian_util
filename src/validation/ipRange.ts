@@ -13,5 +13,6 @@ export const IpRange = (startIP: string, endIP: string, searchIP: string): boole
         startIP = startIP.split(".")[2]; endIP = endIP.split(".")[2]; searchIP = searchIP.split(".")[2];
         if (+startIP <= +searchIP && +searchIP <= +endIP) return true
     }
-    return false
+    return false;
 }
+
