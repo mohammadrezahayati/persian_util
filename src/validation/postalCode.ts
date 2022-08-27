@@ -1,14 +1,10 @@
 import { postalCodes } from '../constants';
+import { PostalCodeFindType } from '../types';
 import { Fa_To_En } from './../parser/number';
 /**
  * TODO: create function to check is valid or not
  * TODO: create function to check postal code from where?
  */
-
-interface PostalCodeFindType {
-    province: string;
-    city: string
-}
 
 /**
  * get postalCode and check it if valid return province and city of postalCode
