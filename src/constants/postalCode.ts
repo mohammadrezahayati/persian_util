@@ -1,9 +1,5 @@
-export interface postalCodeType {
-    province: string;
-    city: string
-    from: string
-    to: string
-}
+import { postalCodeType } from "../types";
+
 export const postalCodes: postalCodeType[] = [
     { province: "آذربایجان شرقی", city: "تبریز", from: "۵۱۳۳۱", to: "۵۱۹۹۹" },
     { province: "آذربایجان شرقی", city: "میانه", from: "۵۳۱۳۱", to: "۵۳۴۹۱" },
