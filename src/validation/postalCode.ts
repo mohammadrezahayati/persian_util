@@ -51,7 +51,7 @@ const postalCodes: postalCodeType[] = [
 ]
 
 /**
- * 
+ * get postalCode and check it if valid return province and city of postalCode
  * @param code 
  * @returns 
  */
