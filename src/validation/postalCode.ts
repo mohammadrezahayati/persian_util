@@ -11,17 +11,14 @@ import { Fa_To_En } from './../parser/number';
  * @param code 
  * @returns 
  */
-export const PostalCodeFind = (code: string): PostalCodeFindType => {
+export const PostalCodeFind = (code: string): PostalCodeFindType | undefined => {
     code = Fa_To_En(code.slice(0, 5));
     if (code) {
-        const postFiltered = postalCodes?.filter(item => (Fa_To_En(item.from) <= code && code <= Fa_To_En(item.to)))
+        const postFiltered = postalCodes?.find(item => (Fa_To_En(item.from) <= code && code <= Fa_To_En(item.to)))
         if (postFiltered) {
-            const res = postFiltered.map(item => {
-                return { province: item.province, city: item.city }
-            })
-            return res[0];
+            return { province: postFiltered.province, city: postFiltered.city };
         }
     }
-    return { province: "", city: "" }
+    return;
 }
 
