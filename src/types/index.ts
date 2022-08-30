@@ -1,3 +1,3 @@
 export * from "./postalCode"
 export * from "./idNumber"
-export * from "./phoneNumber"
+export * from "./telephone"
