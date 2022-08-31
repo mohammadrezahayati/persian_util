@@ -1,5 +1,5 @@
 export * from "./phoneNumber";
 export * from "./cardNumber";
-export * from "./ipRange";
+export * from "./ip";
 export * from "./postalCode";
 export * from "./idNumber";
