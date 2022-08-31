@@ -25,6 +25,7 @@
   "homepage": "https://github.com/mohammadrezahayati/persian_util#readme",
   "devDependencies": {
     "@types/jest": "^28.1.8",
+    "@types/qs": "^6.9.7",
     "jest": "^29.0.0",
     "prettier": "^2.7.1",
     "ts-jest": "^28.0.8",
