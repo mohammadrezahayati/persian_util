@@ -39,7 +39,6 @@
     "axios": "^0.27.2",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "qs": "^6.11.0"
+    "eslint-plugin-prettier": "^4.2.1"
   }
 }
