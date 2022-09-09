@@ -7,7 +7,7 @@ describe("Card", () => {
 
     })
     test("Id Number is valid", () => {
-        expect(CheckIdNumber("194۲۳۳۴۴۵۵")).toBeTruthy()
-        expect(CheckIdNumber("9992334455")).toBeFalsy() // This condition most be false because does not exists
+        expect(CheckIdNumber("194۲۳۳۴۴۵۵")).toBeTruthy();
+        expect(CheckIdNumber("9992334455")).toBeFalsy(); // This condition most be false because does not exists
     })
 })
