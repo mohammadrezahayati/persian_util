@@ -5,9 +5,9 @@ export interface IpApiType {
     region: string;
     regionName: string;
     city: string;
-    zip: 95054;
-    lat: 37.3931;
-    lon: -121.962;
+    zip: string;
+    lat: number;
+    lon: number;
     timezone: string;
     isp: string;
     org: string;

@@ -1,6 +1,6 @@
 {
   "name": "persian_util",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "A repository for the Persian programmer community",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
