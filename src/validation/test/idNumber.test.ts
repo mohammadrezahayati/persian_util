@@ -8,6 +8,7 @@ describe("Card", () => {
     })
     test("Id Number is valid", () => {
         //expect(CheckIdNumber("your id number 😎")).toBeTruthy(); // This condition most be truthy
+        expect(CheckIdNumber("۱۲۳۴۵۶۷۸۹0")).toBeFalsy(); // This condition most be truthy
         expect(CheckIdNumber("0054725112")).toBeFalsy(); // This condition most be false because does not exists
     })
 })
