@@ -25,8 +25,8 @@ export const CheckIdNumber = (id: string): boolean => {
 
     const regex = /^\d{10}$/g
     if (regex.test(Fa_To_En(id))) {
-        let nationCode = id.toString();
-        const codeLength = nationCode.length;
+        let nationId = id.toString();
+        const idLength = nationId.length;
         const notAllowedDigits = {
             "0000000000": true,
             "2222222222": true,
@@ -38,14 +38,14 @@ export const CheckIdNumber = (id: string): boolean => {
             "8888888888": true,
             "9999999999": true,
         };
-        if (nationCode in notAllowedDigits) return false;
-        if (codeLength < 8 || codeLength > 10) return false;
-        nationCode = ("00" + nationCode).substring(codeLength + 2 - 10);
-        if (+nationCode.substring(3, 9) === 0) return false;
-        const lastNumber = +nationCode.substring(9);
+        if (nationId in notAllowedDigits) return false;
+        if (idLength < 8 || idLength > 10) return false;
+        nationId = ("00" + nationId).substring(idLength + 2 - 10);
+        if (+nationId.substring(3, 9) === 0) return false;
+        const lastNumber = +nationId.substring(9);
         let sum = 0;
         for (let i = 0; i < 9; i++) {
-            sum += +nationCode.substring(i, i + 1) * (10 - i);
+            sum += +nationId.substring(i, i + 1) * (10 - i);
         }
         sum = sum % 11;
         return (sum < 2 && lastNumber === sum) || (sum >= 2 && lastNumber === 11 - sum);
