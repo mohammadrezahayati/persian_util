@@ -11,7 +11,7 @@ export const CheckCardNumber = (CardNumber: string): boolean => {
         CardNumber = CardNumber.replace(/[\s.-]/g, "");
         CardNumber = CardNumber.slice(0, 6);
         const bankName = banks.find((item) => item.id === +CardNumber);
-        if (bankName) return true
+        if (bankName) return true;
     }
     return false;
 }
