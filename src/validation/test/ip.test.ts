@@ -4,8 +4,8 @@ import { IP } from "../ip"
 describe("IP Information", () => {
     
     test("Check IP Information", async () => {
-        const api = await new IP()
-        const res = await api.getIpInfo("137.184.82.151")
+        const api = await new IP();
+        const res = await api.getIpInfo("137.184.82.151");
         expect(res).toMatchObject({
             "status": "success",
             "country": "United States",
