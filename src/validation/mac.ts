@@ -9,7 +9,7 @@ export class MAC {
     }
     getMacInfo = async (mac: string): Promise<MacType> => {
         const apiCall = (await this.MacInstance).get<MacType>(`${mac || this.mac}`);
-        const res = (await apiCall).data;
+        const res = (await apiCall).data
         return res;
     }
 }
