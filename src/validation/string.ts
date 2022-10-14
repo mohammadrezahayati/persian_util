@@ -1,4 +1,4 @@
-import { WordCountType } from './../types/string';
+import { LetterCountType, WordCountType } from './../types/string';
 
 /**
  * This function get an sentence and count all duplicated words 
@@ -23,7 +23,7 @@ export const WordCount = (sentence: string) => {
  * @param Sentence 
  */
 export const letterCount = (letter: string) => {
-    const words: WordCountType = {};
+    const words: LetterCountType = {};
     for (let i = 0; i < letter.length; i++) {
         const word = letter[i];
         if (!words[word]) {
