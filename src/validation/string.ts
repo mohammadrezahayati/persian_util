@@ -23,7 +23,7 @@ export const WordCount = (sentence: string) => {
  * @param Sentence 
  */
 export const letterCount = (letter: string) => {
-    const letterFix = letter.match(/(\w)/g) ?? ""
+    const letterFix = letter.match(/(\w)/g) ?? "";
     const words: LetterCountType = {};
     for (let i = 0; i < letterFix.length; i++) {
         const word = letterFix[i];
