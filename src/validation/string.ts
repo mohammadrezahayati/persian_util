@@ -30,7 +30,7 @@ export const letterCount = (letter: string) => {
         if (!words[word]) {
             words[word] = 1;
         } else {
-            words[word]++;
+            words[word]++
         }
     }
     return words;
