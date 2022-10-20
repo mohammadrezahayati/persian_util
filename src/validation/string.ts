@@ -28,7 +28,7 @@ export const letterCount = (letter: string) => {
     for (let i = 0; i < letterFix.length; i++) {
         const word = letterFix[i];
         if (!words[word]) {
-            words[word] = 1;
+            words[word] = 1
         } else {
             words[word]++;
         }
