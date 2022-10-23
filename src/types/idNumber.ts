@@ -1,11 +1,11 @@
 
 export type idNumberByCityType = {
-    province: string
+    province: string;
     city: string;
     from: string;
     to: string | undefined;
 }
 export interface idNumberFindType {
-    province: string
+    province: string;
     city: string;
 }
