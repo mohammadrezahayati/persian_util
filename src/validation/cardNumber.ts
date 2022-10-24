@@ -13,7 +13,7 @@ export const CheckCardNumber = (CardNumber: string): boolean => {
         const bankName = banks.find((item) => item.id === +CardNumber);
         if (bankName) return true;
     }
-    return false
+    return false;
 }
 
 /**
