@@ -16,7 +16,7 @@ export const PostalCodeFind = (code: string): PostalCodeFindType | undefined => 
     if (code) {
         const postFiltered = postalCodes?.find(item => (Fa_To_En(item.from) <= code && code <= Fa_To_En(item.to)));
         if (postFiltered) {
-            return { province: postFiltered.province, city: postFiltered.city };
+            return { province: postFiltered.province, city: postFiltered.city }
         }
     }
     return;
