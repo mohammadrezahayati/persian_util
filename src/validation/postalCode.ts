@@ -8,7 +8,7 @@ import { Fa_To_En } from './../parser/number';
 
 /**
  * get postalCode and check it if valid return province and city of postalCode
- * @param code 
+ * @param code string
  * @returns 
  */
 export const PostalCodeFind = (code: string): PostalCodeFindType | undefined => {
