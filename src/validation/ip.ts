@@ -5,7 +5,7 @@ import IpApi from '../webService/api/Ip';
 export class IP {
     private IpInstance: Promise<AxiosInstance>;
     constructor(private ip?: string) {
-        this.IpInstance = new IpApi().IpCreate()
+        this.IpInstance = new IpApi().IpCreate();
     }
     getIpInfo = async (ip: string): Promise<IpApiType> => {
         const apiCall = (await this.IpInstance).get<IpApiType>(`${ip || this.ip}`);
