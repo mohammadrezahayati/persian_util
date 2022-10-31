@@ -13,7 +13,7 @@ export class IP {
         return res;
     }
     IsIpFromIran = async (ip: string): Promise<boolean> => {
-        const resApi = await this.getIpInfo(ip)
+        const resApi = await this.getIpInfo(ip);
         if (resApi && resApi.country === "Iran") return true;
         return false;
     }
