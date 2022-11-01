@@ -9,7 +9,7 @@ export class IP {
     }
     getIpInfo = async (ip: string): Promise<IpApiType> => {
         const apiCall = (await this.IpInstance).get<IpApiType>(`${ip || this.ip}`);
-        const res = (await apiCall).data
+        const res = (await apiCall).data;
         return res;
     }
     IsIpFromIran = async (ip: string): Promise<boolean> => {
