@@ -1,7 +1,7 @@
 import { banks } from "../constants/cardNumber";
 
 /**
- * get card number and check if is valid
+ * get card number and check if is valid or not
  * @param CardNumber 
  * @returns boolean
  */
