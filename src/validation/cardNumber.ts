@@ -25,7 +25,7 @@ export const CardBank = (CardNumber: string): string | undefined => {
     if (CheckCardNumber(CardNumber)) {
         CardNumber = CardNumber.slice(0, 6);
         const bankName = banks.find((item) => item.id === +CardNumber);
-        return bankName?.name
+        return bankName?.name;
     }
     return;
 }
