@@ -60,3 +60,11 @@ export const PersianLetterSpacing = (sentence: string) => {
         .replace(/\u0020(تر((ی)|(ین))?\s)/g, "‌$1")
         .replace(/\u0020((هایی|هایم|هایت|هایش|هایمان|هایتان|هایشان)\s)/g, "‌$1");
 }
+
+
+/**
+ * get a text and remove all space between letters
+ * @param text 
+ * @return string
+ */
+export const RemoveSpace = (text: string): string => text.replace(/\s/g, '')
