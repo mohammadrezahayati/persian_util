@@ -21,7 +21,7 @@ describe("IP Information", () => {
             "org": "DigitalOcean, LLC",
             "as": "AS14061 DigitalOcean, LLC",
             "query": "137.184.82.151"
-        })
+        });
     })
     
     test("Is IP from Iran", async () => {
