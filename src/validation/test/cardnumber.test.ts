@@ -7,6 +7,6 @@ describe("Card", () => {
         expect(CheckCardNumber("5022-2910-3333-4444")).toBeTruthy()
     })
     test("Bank Card name", () => {
-        expect(CardBank("5022293345678976")).toStrictEqual("پاسارگاد")
+        expect(CardBank("5022293345678976")).toStrictEqual("پاسارگاد");
     })
 })
