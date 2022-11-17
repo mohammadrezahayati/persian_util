@@ -27,6 +27,6 @@ describe("IP Information", () => {
     test("Is IP from Iran", async () => {
         const api = await new IP();
         const res = await api.IsIpFromIran("103.130.144.0");
-        expect(res).toBeTruthy()
+        expect(res).toBeTruthy();
     })
 })
