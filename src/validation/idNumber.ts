@@ -1,5 +1,5 @@
-import { idNumberFindType, idNumberByCityType } from './../types/idNumber';
-import { idNumbersByCity } from "../constants/idNumber"
+import { idNumberFindType, idNumberByCityType } from '../types';
+import { idNumbersByCity } from "../constants"
 import { Fa_To_En } from "../parser";
 
 /**
