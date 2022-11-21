@@ -5,7 +5,7 @@ describe("MAC Information", () => {
 
     test("Check MAC Information", async () => {
         const api = await new MAC();
-        const res = await api.getMacInfo("00:23:AB:7B:58:99")
+        const res = await api.getMacInfo("00:23:AB:7B:58:99");
         expect(res).toMatchObject([{
             "startHex": "0023AB000000",
             "endHex": "0023ABFFFFFF",
