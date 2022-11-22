@@ -7,7 +7,7 @@ describe("Card", () => {
         })
         expect(PostalCodeFind("63511")).toMatchObject({
             province: "خوزستان", city: "ماهشهر"
-        })
+        });
     })
 
 })
