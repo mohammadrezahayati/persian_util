@@ -12,7 +12,7 @@ describe("String", () => {
         const letters = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
         const res = letterCount(letters);
         expect(res).toMatchObject({ "0": 3, "1": 2, "5": 1, "6": 1, "9": 1, "A": 1, "I": 6, "L": 5, "M": 1, "P": 1, "a": 28, "b": 5, "c": 10, "d": 16, "e": 59, "f": 6, "g": 11, "h": 14, "i": 32, "k": 7, "l": 17, "m": 18, "n": 38, "o": 25, "p": 18, "r": 24, "s": 39, "t": 43, "u": 17, "v": 5, "w": 6, "x": 2, "y": 13 });
-    })
+    });
     test("Letter letter spacing", () => {
         const sentence = "متن دلخواه خود را می نویسم"
         const res = PersianLetterSpacing(sentence);
