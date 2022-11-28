@@ -22,5 +22,5 @@ describe("String", () => {
         test('remove all space on text', () => {
             expect(RemoveSpace("the  star wa rrrr ssss  !")).toBe("thestarwarrrrssss!");
         })
-    })
+    });
 })
