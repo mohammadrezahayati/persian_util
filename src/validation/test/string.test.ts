@@ -21,6 +21,6 @@ describe("String", () => {
     describe('text parser', () => {
         test('remove all space on text', () => {
             expect(RemoveSpace("the  star wa rrrr ssss  !")).toBe("thestarwarrrrssss!");
-        })
+        });
     });
 })
