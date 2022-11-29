@@ -16,7 +16,7 @@ describe("String", () => {
     test("Letter letter spacing", () => {
         const sentence = "متن دلخواه خود را می نویسم"
         const res = PersianLetterSpacing(sentence);
-        expect(res).toBe("متن دلخواه خود را می‌نویسم")
+        expect(res).toBe("متن دلخواه خود را می‌نویسم");
     });
     describe('text parser', () => {
         test('remove all space on text', () => {
