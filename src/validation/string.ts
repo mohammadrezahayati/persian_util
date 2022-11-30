@@ -67,4 +67,4 @@ export const PersianLetterSpacing = (sentence: string) => {
  * @param text 
  * @return string
  */
-export const RemoveSpace = (text: string): string => text.replace(/\s/g, '')
+export const RemoveSpace = (text: string): string => text.replace(/\s/g, '');
