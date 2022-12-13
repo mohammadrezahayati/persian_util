@@ -5,7 +5,7 @@ import { Fa_To_En } from "../parser";
 /**
  * get idNumber and check it if true return province and city
  * @param id 
- * @returns object : { province: "", city: "" }
+ * @returns object : { province: "", city: "" } 
  */
 export const IdNumberFind = (id: string): idNumberFindType | undefined => {
     id = Fa_To_En(id.slice(0, 3));
