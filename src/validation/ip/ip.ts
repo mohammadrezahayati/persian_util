@@ -1,7 +1,6 @@
-import { AxiosInstance } from 'axios';
-import { IpApiType } from '../types/ip';
-import IpApi from '../webService/api/Ip';
-
+import { AxiosInstance } from "axios";
+import { IpApiType } from "@Types"
+import { IpApi } from "@WebService";
 export class IP {
     private IpInstance: Promise<AxiosInstance>;
     constructor(private ip?: string) {
