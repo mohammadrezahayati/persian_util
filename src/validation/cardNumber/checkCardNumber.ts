@@ -1,4 +1,4 @@
-import { banks } from "../constants/cardNumber";
+import { banks } from "@Constants";
 
 /**
  * get card number and check if is valid or not
@@ -14,18 +14,4 @@ export const CheckCardNumber = (CardNumber: string): boolean => {
         if (bankName) return true;
     }
     return false;
-}
-
-/**
- * get card number and check if is valid
- * @param CardNumber 
- * @returns boolean
- */
-export const CardBank = (CardNumber: string): string | undefined => {
-    if (CheckCardNumber(CardNumber)) {
-        CardNumber = CardNumber.slice(0, 6);
-        const bankName = banks.find((item) => item.id === +CardNumber);
-        return bankName?.name;
-    }
-    return;
 }

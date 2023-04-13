@@ -4,7 +4,3 @@ export interface postalCodeType {
     from: string
     to: string
 }
-export interface PostalCodeFindType {
-    province: string;
-    city: string
-}

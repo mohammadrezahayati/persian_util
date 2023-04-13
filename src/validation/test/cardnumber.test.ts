@@ -1,5 +1,6 @@
+import { CardBank, CheckCardNumber } from "@Validation";
 import { describe, test, expect } from "@jest/globals"
-import { CheckCardNumber, CardBank } from "../"
+
 describe("Card", () => {
     test("Card is Valid", () => {
         expect(CheckCardNumber("6037 9918 3333 4444")).toBeTruthy();

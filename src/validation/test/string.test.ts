@@ -1,4 +1,4 @@
-import { letterCount, PersianLetterSpacing, RemoveSpace, WordCount } from './../string';
+import { PersianLetterSpacing, RemoveSpace, WordCount, letterCount } from "@Validation";
 import { describe, test, expect } from "@jest/globals"
 
 

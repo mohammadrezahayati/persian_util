@@ -5,7 +5,3 @@ export type idNumberByCityType = {
     from: string;
     to: string | undefined;
 }
-export interface idNumberFindType {
-    province: string;
-    city: string;
-}

@@ -1,10 +1,6 @@
-import { postalCodes } from '../constants';
-import { PostalCodeFindType } from '../types';
-import { Fa_To_En } from './../parser/number';
-/**
- * TODO: create function to check is valid or not
- * TODO: create function to check postal code from where?
- */
+import { postalCodes } from "@Constants";
+import { Fa_To_En } from "@Parser";
+import { PostalCodeFindType } from "@Types";
 
 /**
  * get postalCode and check it if valid return province and city of postalCode
@@ -21,4 +17,3 @@ export const PostalCodeFind = (code: string): PostalCodeFindType | undefined => 
     }
     return;
 }
-
