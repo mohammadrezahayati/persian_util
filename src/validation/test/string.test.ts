@@ -1,5 +1,5 @@
-import { PersianLetterSpacing, RemoveSpace, WordCount, letterCount } from "@Validation";
-import { describe, test, expect } from "@jest/globals"
+import { describe, expect, test } from "@jest/globals";
+import { PersianLetterSpacing, RemoveSpace, WordCount, letterCount } from "../string";
 
 
 describe("String", () => {

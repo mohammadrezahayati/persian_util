@@ -1,5 +1,6 @@
-import { CardBank, CheckCardNumber } from "@Validation";
+
 import { describe, test, expect } from "@jest/globals"
+import { CardBank, CheckCardNumber } from "../cardNumber";
 
 describe("Card", () => {
     test("Card is Valid", () => {

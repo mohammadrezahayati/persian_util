@@ -1,5 +1,5 @@
-import { Add_Commas, En_To_Fa, Fa_To_En, Remove_Commas, Rial_To_Toman, Toman_To_Rial } from '@Parser';
 import { describe, expect, test } from '@jest/globals';
+import { Add_Commas, En_To_Fa, Fa_To_En, Remove_Commas, Rial_To_Toman, Toman_To_Rial } from '../number';
 describe("Parse Number", () => {
     test("Parse EN Number to FA", () => {
         expect(En_To_Fa("09123456789")).toBe("۰۹۱۲۳۴۵۶۷۸۹")

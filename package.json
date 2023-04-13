@@ -1,6 +1,6 @@
 {
   "name": "persian_util",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "description": "A repository for the Persian programmer community",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -11,7 +11,9 @@
     "test": "jest",
     "test-watch": "jest --watchAll",
     "build": "tsc",
-    "watch": "tsc -w"
+    "watch": "tsc -w",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
   },
   "repository": "git+https://github.com/mohammadrezahayati/persian_util.git",
   "keywords": [

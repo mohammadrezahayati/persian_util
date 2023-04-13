@@ -1,6 +1,6 @@
-import { postalCodes } from "@Constants";
-import { Fa_To_En } from "@Parser";
-import { PostalCodeFindType } from "@Types";
+import { postalCodes } from "../../constants/postalCode";
+import { Fa_To_En } from "../../parser/number/FaToEn";
+import { PostalCodeFindType } from "../../types/postalCode/postalCodeFind";
 
 /**
  * get postalCode and check it if valid return province and city of postalCode

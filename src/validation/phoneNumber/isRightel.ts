@@ -1,4 +1,5 @@
-import { Fa_To_En } from "@Parser";
+import { Fa_To_En } from "../../parser/number/FaToEn";
+
 
 /**
  * take number and check it if from Rightel Operator or not

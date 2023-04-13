@@ -1,6 +1,6 @@
-import { idNumbersByCity } from "@Constants";
-import { Fa_To_En } from "@Parser";
-import { idNumberByCityType, idNumberFindType } from "@Types";
+import { idNumbersByCity } from "../../constants/idNumber";
+import { Fa_To_En } from "../../parser/number/FaToEn";
+import { idNumberFindType, idNumberByCityType } from "../../types/idNumber";
 
 /**
  * get idNumber and check it if true return province and city

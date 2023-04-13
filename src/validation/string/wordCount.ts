@@ -1,4 +1,4 @@
-import { WordCountType } from "@Types";
+import { WordCountType } from "../../types/string/wordCount";
 
 /**
  * This function get an sentence and count all duplicated words 

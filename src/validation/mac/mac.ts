@@ -1,6 +1,6 @@
-import { MacType } from "@Types";
-import { MacApi } from "@WebService";
 import { AxiosInstance } from "axios";
+import { MacType } from "../../types/mac/macApi";
+import { MacApi } from "../../webService/api/mac/Mac";
 
 /**
  * This Class Create Instance of MacApi and has getMacInfo Function

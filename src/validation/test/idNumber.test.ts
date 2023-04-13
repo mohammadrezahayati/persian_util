@@ -1,6 +1,7 @@
 
-import { CheckIdNumber, IdNumberFind } from "@Validation"
-import { describe, test, expect } from "@jest/globals"
+
+import { describe, expect, test } from "@jest/globals"
+import { CheckIdNumber, IdNumberFind } from "../idNumber"
 
 describe("Card", () => {
     test("Id Number city", () => {
