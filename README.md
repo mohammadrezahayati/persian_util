@@ -263,6 +263,6 @@ Check the string of user, return the remove all space on text
 ```javascript
 import { validation } from 'persian_util';
 
-validation.RemoveSpace("the  star wa rrrr ssss  !"))// -> return -> "thestarwarrrrssss!");
+validation.RemoveSpace("the  star wa rrrr ssss  !")// -> return -> "thestarwarrrrssss!");
  */
 ```
