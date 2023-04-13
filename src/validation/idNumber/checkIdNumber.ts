@@ -1,4 +1,5 @@
-import { Fa_To_En } from "@Parser";
+import { Fa_To_En } from "../../parser/number/FaToEn";
+
 
 /**
  * get idNumber and check it if exists and valid

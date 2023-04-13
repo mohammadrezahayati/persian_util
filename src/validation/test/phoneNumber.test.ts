@@ -1,4 +1,4 @@
-import { isMCI, isMTN, isRightel } from '@Validation';
+import { isMCI, isMTN, isRightel } from '../phoneNumber';
 import { describe, expect, test } from '@jest/globals';
 
 

@@ -1,4 +1,5 @@
-import { LetterCountType } from "@Types";
+import { LetterCountType } from "../../types/string/letterCount";
+
 
 /**
  * This function get an sentence and count all duplicated letter 

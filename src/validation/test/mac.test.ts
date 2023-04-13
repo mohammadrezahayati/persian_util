@@ -1,5 +1,5 @@
-import { MAC } from "@Validation";
 import { describe, test, expect } from "@jest/globals"
+import { MAC } from "../mac/mac";
 
 
 describe("MAC Information", () => {

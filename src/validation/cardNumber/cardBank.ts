@@ -1,5 +1,6 @@
-import { banks } from "@Constants";
+import { banks } from "../../constants/cardNumber";
 import { CheckCardNumber } from "./checkCardNumber";
+
 
 /**
  * get card number and check if is valid

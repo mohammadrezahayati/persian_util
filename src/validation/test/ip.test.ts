@@ -1,5 +1,5 @@
-import { IP } from "@Validation";
 import { describe, test, expect } from "@jest/globals"
+import { IP } from "../ip/ip";
 
 
 describe("IP Information", () => {

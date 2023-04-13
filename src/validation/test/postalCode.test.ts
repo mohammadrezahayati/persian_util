@@ -1,5 +1,5 @@
-import { PostalCodeFind } from "@Validation";
 import { describe, test, expect } from "@jest/globals";
+import { PostalCodeFind } from "../postalCode/findPostalCode";
 
 describe("Card", () => {
     test("Card is Valid", () => {

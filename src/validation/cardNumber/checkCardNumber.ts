@@ -1,4 +1,6 @@
-import { banks } from "@Constants";
+import { banks } from "../../constants/cardNumber";
+
+
 
 /**
  * get card number and check if is valid or not
