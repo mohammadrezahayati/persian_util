@@ -1,1 +1,1 @@
-export * from "./ipApi"
+export * from "./ipApi";
