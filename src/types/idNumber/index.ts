@@ -1,2 +1,2 @@
-export * from "./idNumberByCity"
-export * from "./idNumberFind"
+export * from "./idNumberByCity";
+export * from "./idNumberFind";
