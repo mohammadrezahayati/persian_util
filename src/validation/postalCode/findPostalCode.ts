@@ -7,7 +7,7 @@ import { PostalCodeFindType } from "../../types/postalCode/postalCodeFind";
  * @param code string
  * @returns 
  */
-export const PostalCodeFind = (code: string): PostalCodeFindType | undefined => {
+export const PostalCodeFind = (code: string): PostalCodeFindType | undefined | boolean => {
     code = Fa_To_En(code.slice(0, 5));
     if (code) {
         const postFiltered = postalCodes?.find(item => (Fa_To_En(item.from) <= code && code <= Fa_To_En(item.to)));
@@ -15,5 +15,5 @@ export const PostalCodeFind = (code: string): PostalCodeFindType | undefined => 
             return { province: postFiltered.province, city: postFiltered.city };
         }
     }
-    return;
+    return false;
 }
