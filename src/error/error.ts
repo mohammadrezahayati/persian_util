@@ -1,21 +1,98 @@
-
+import { ErrorFuncType, ErrorExpectedType, ErrorMessageType, ErrorMethodType } from "../types/error";
 /**
- * Error Class
+ * Err class is an Error handling class to check your method or variable or anything you want and returned expected message and error
+ * @param T type of callback
+ * @param U type of expected returned type
+ * @param M type of message
  */
+export class Err<T, U, M>{
+    method;
+    #expected;
+    #ErrorFunc?;
+    #message?;
+    constructor(method: ErrorMethodType<T>, expected: ErrorExpectedType<U>, ErrorFunc?: ErrorFuncType, message?: ErrorMessageType<M>) {
+        this.method = method;
+        this.#expected = expected;
+        this.#ErrorFunc = ErrorFunc;
+        this.#message = message;
+    }
+    getSanaz = (): any => {
+        if (this.#ErrorFunc) {
 
-import { ErrorType } from "../types/error";
+        }
 
-/**
- * TODO : what we need :
- * TODO : get function, or variable 
- * TODO : check returned type or value function, 
- * TODO : value we expected, 
- * TODO : Error function we expected, 
- * TODO : error message may be an object  
- */
-export class Err<methodType, expected, message extends ErrorType<methodType, expected, message>> {
-    constructor(private instance: Error) {
-        instance = new Error()
+    }
+    getError = () => {
+        try {
+            if (this.method === this.#expected) {
+                return true;
+            }
+            if (this.method === undefined) {
+                throw Error("audads");
+            }
+        } catch (err) {
+            if (err instanceof Error) {
+                return {
+                    errorType: typeof err,
+                    customMessage: this.#message,
+                    message: err.message,
+                    errorName: err.name,
+                    stack: err.stack,
+                    expected: `expected ${this.#expected} but get ${err.message}`
+                }
+            }
+            if (err instanceof RangeError) {
+                return {
+                    errorType: typeof err,
+                    customMessage: this.#message,
+                    message: err.message,
+                    errorName: err.name,
+                    stack: err.stack,
+                    expected: `expected ${this.#expected} but get ${err.message}`
+                }
+            }
+            if (err instanceof EvalError) {
+                return {
+                    errorType: typeof err,
+                    customMessage: this.#message,
+                    message: err.message,
+                    errorName: err.name,
+                    stack: err.stack,
+                    expected: `expected ${this.#expected} but get ${err.message}`
+                }
+            }
+            if (err instanceof ReferenceError) {
+                return {
+                    errorType: typeof err,
+                    customMessage: this.#message,
+                    message: err.message,
+                    errorName: err.name,
+                    stack: err.stack,
+                    expected: `expected ${this.#expected} but get ${err.message}`
+                }
+            }
+            if (err instanceof SyntaxError) {
+                return {
+                    errorType: typeof err,
+                    customMessage: this.#message,
+                    message: err.message,
+                    errorName: err.name,
+                    stack: err.stack,
+                    expected: `expected ${this.#expected} but get ${err.message}`
+                }
+            }
+            if (err instanceof URIError) {
+                return {
+                    errorType: typeof err,
+                    customMessage: this.#message,
+                    message: err.message,
+                    errorName: err.name,
+                    stack: err.stack,
+                    expected: `expected ${this.#expected} but get ${err.message}`
+                }
+            }
+        }
     }
 
 }
+

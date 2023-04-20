@@ -7,11 +7,11 @@ import { CheckCardNumber } from "./checkCardNumber";
  * @param CardNumber 
  * @returns boolean
  */
-export const CardBank = (CardNumber: string): string | undefined => {
+export const CardBank = (CardNumber: string): string | undefined | boolean => {
     if (CheckCardNumber(CardNumber)) {
         CardNumber = CardNumber.slice(0, 6);
         const bankName = banks.find((item) => item.id === +CardNumber);
         return bankName?.name;
     }
-    return;
+    return false;
 }

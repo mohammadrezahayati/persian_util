@@ -7,11 +7,11 @@ import { idNumberFindType, idNumberByCityType } from "../../types/idNumber";
  * @param id 
  * @returns object : { province: "", city: "" } 
  */
-export const IdNumberFind = (id: string): idNumberFindType | undefined => {
+export const IdNumberFind = (id: string): idNumberFindType | undefined | boolean => {
     id = Fa_To_En(id.slice(0, 3));
     const findCity = idNumbersByCity.find((item: idNumberByCityType) => item.from === id || item.to === id);
     if (findCity) {
         return { province: findCity.province, city: findCity.city };
     }
-    return;
+    return false;
 }
