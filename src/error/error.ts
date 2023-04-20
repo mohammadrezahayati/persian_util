@@ -27,9 +27,7 @@ export class Err<T, U, M>{
             if (this.method === this.#expected) {
                 return true;
             }
-            if (this.method === undefined) {
-                throw Error("audads");
-            }
+            throw new Error();
         } catch (err) {
             if (err instanceof Error) {
                 return {
@@ -38,7 +36,7 @@ export class Err<T, U, M>{
                     message: err.message,
                     errorName: err.name,
                     stack: err.stack,
-                    expected: `expected ${this.#expected} but get ${err.message}`
+                    expected: `expected ${this.#expected} but get ${err.name}`
                 }
             }
             if (err instanceof RangeError) {
@@ -48,7 +46,7 @@ export class Err<T, U, M>{
                     message: err.message,
                     errorName: err.name,
                     stack: err.stack,
-                    expected: `expected ${this.#expected} but get ${err.message}`
+                    expected: `expected ${this.#expected} but get ${err.name}`
                 }
             }
             if (err instanceof EvalError) {
@@ -58,7 +56,7 @@ export class Err<T, U, M>{
                     message: err.message,
                     errorName: err.name,
                     stack: err.stack,
-                    expected: `expected ${this.#expected} but get ${err.message}`
+                    expected: `expected ${this.#expected} but get ${err.name}`
                 }
             }
             if (err instanceof ReferenceError) {
@@ -68,7 +66,7 @@ export class Err<T, U, M>{
                     message: err.message,
                     errorName: err.name,
                     stack: err.stack,
-                    expected: `expected ${this.#expected} but get ${err.message}`
+                    expected: `expected ${this.#expected} but get ${err.name}`
                 }
             }
             if (err instanceof SyntaxError) {
@@ -78,7 +76,7 @@ export class Err<T, U, M>{
                     message: err.message,
                     errorName: err.name,
                     stack: err.stack,
-                    expected: `expected ${this.#expected} but get ${err.message}`
+                    expected: `expected ${this.#expected} but get ${err.name}`
                 }
             }
             if (err instanceof URIError) {
@@ -88,9 +86,10 @@ export class Err<T, U, M>{
                     message: err.message,
                     errorName: err.name,
                     stack: err.stack,
-                    expected: `expected ${this.#expected} but get ${err.message}`
+                    expected: `expected ${this.#expected} but get ${err.name}`
                 }
             }
+            return err
         }
     }
 
