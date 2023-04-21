@@ -37,7 +37,7 @@ export class Err<T, U, M>{
                     errorName: err.name,
                     stack: err.stack,
                     expected: `expected ${this.#expected} but get ${err.name}`
-                }
+                };
             }
             if (err instanceof RangeError) {
                 return {
@@ -47,7 +47,7 @@ export class Err<T, U, M>{
                     errorName: err.name,
                     stack: err.stack,
                     expected: `expected ${this.#expected} but get ${err.name}`
-                }
+                };
             }
             if (err instanceof EvalError) {
                 return {
@@ -57,7 +57,7 @@ export class Err<T, U, M>{
                     errorName: err.name,
                     stack: err.stack,
                     expected: `expected ${this.#expected} but get ${err.name}`
-                }
+                };
             }
             if (err instanceof ReferenceError) {
                 return {
@@ -67,7 +67,7 @@ export class Err<T, U, M>{
                     errorName: err.name,
                     stack: err.stack,
                     expected: `expected ${this.#expected} but get ${err.name}`
-                }
+                };
             }
             if (err instanceof SyntaxError) {
                 return {
@@ -77,7 +77,7 @@ export class Err<T, U, M>{
                     errorName: err.name,
                     stack: err.stack,
                     expected: `expected ${this.#expected} but get ${err.name}`
-                }
+                };
             }
             if (err instanceof URIError) {
                 return {
@@ -87,9 +87,9 @@ export class Err<T, U, M>{
                     errorName: err.name,
                     stack: err.stack,
                     expected: `expected ${this.#expected} but get ${err.name}`
-                }
+                };
             }
-            return err
+            return err;
         }
     }
 
