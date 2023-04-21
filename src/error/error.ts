@@ -21,7 +21,12 @@ export class Err<T, U, M>{
             if (this.method === this.#expected) {
                 return true;
             }
-            throw new Error();
+            if (this.method !== this.#expected) {
+                if (this.#ErrorFunc !== undefined) {
+                    throw this.#ErrorFunc;
+                }
+            }
+            throw new Error()
         } catch (err) {
             if (err instanceof Error) {
                 return {
