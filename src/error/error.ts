@@ -16,12 +16,6 @@ export class Err<T, U, M>{
         this.#ErrorFunc = ErrorFunc;
         this.#message = message;
     }
-    getSanaz = (): any => {
-        if (this.#ErrorFunc) {
-
-        }
-
-    }
     getError = () => {
         try {
             if (this.method === this.#expected) {
