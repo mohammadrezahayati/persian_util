@@ -6,9 +6,24 @@ import { ErrorFuncType, ErrorExpectedType, ErrorMessageType, ErrorMethodType } f
  * @param M type of message
  */
 export class Err<T, U, M>{
+    /**
+     * @property method is an method or property you want to validate
+     */
     method;
+
+    /**
+     * @property expected is an something you want to validate quality to return element in method property
+     */
     #expected;
+
+    /**
+     * @property ErrorFunc is an method when method returned false this specific class constructor run
+     */
     #ErrorFunc?;
+
+    /**
+     * @property message is an property you want to returned as message to user
+     */
     #message?;
     constructor(method: ErrorMethodType<T>, expected: ErrorExpectedType<U>, ErrorFunc?: ErrorFuncType, message?: ErrorMessageType<M>) {
         this.method = method;
