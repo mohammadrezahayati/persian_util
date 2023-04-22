@@ -16,18 +16,22 @@ export class Err<T, U, M>{
         this.#ErrorFunc = ErrorFunc;
         this.#message = message;
     }
-    getSanaz = (): any => {
-        if (this.#ErrorFunc) {
-
-        }
-
-    }
+    /**
+     * this method get all error if you have any error
+     * @return object if have any error 
+     * @return true if anything will be fine
+     */
     getError = () => {
         try {
             if (this.method === this.#expected) {
                 return true;
             }
-            throw new Error();
+            if (this.method !== this.#expected) {
+                if (this.#ErrorFunc !== undefined) {
+                    throw this.#ErrorFunc;
+                }
+            }
+            throw new Error()
         } catch (err) {
             if (err instanceof Error) {
                 return {

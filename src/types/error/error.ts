@@ -14,7 +14,7 @@ export type ErrorExpectedType<T> = T
 /**
  * All type of javascript Error Function we can pass the pure Error type functions in Err class and its optional
  */
-export type ErrorFuncType = RangeError | EvalError | ReferenceError | SyntaxError | URIError;
+export type ErrorFuncType = RangeError | EvalError | ReferenceError | SyntaxError | URIError | Error | undefined;
 
 /**
  * Type of the error message we want to returned
