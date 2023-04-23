@@ -1,4 +1,5 @@
 import { ErrorFuncType, ErrorExpectedType, ErrorMessageType, ErrorMethodType } from "../types/error";
+
 /**
  * Err class is an Error handling class to check your method or variable or anything you want and returned expected message and error
  * @param T type of callback
@@ -25,6 +26,14 @@ export class Err<T, U, M>{
      * @property message is an property you want to returned as message to user
      */
     #message?;
+
+    /**
+     * 
+     * @param method is an method or property you want to validate
+     * @param expected is an something you want to validate quality to return element in method property
+     * @param ErrorFunc is an method when method returned false this specific class constructor run
+     * @param message is an property you want to returned as message to user
+     */
     constructor(method: ErrorMethodType<T>, expected: ErrorExpectedType<U>, ErrorFunc?: ErrorFuncType, message?: ErrorMessageType<M>) {
         this.method = method;
         this.#expected = expected;
