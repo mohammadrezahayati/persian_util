@@ -4,4 +4,5 @@ export * as constants from "./constants";
 export * as types from "./types";
 export * as Error from "./error";
 export * from "./error/error";
+export *  from "./utils";
 export * as webServices from "./webService";
