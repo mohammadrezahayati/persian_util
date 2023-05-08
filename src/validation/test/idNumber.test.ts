@@ -5,7 +5,7 @@ import { CheckIdNumber, IdNumberFind } from "../idNumber"
 
 describe("Card", () => {
     test("Id Number city", () => {
-        expect(IdNumberFind("194")).toMatchObject({ province: "خوزستان", city: "بندرماهشهر" })
+        expect(IdNumberFind("194")).toMatchObject({ province: "خوزستان", city: "بندرماهشهر" });
 
     })
     test("Id Number is valid", () => {
