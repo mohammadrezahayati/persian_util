@@ -18,6 +18,6 @@ describe("MAC Information", () => {
             "addressL3": "SAN JOSE CA 95134-1706",
             "country": "UNITED STATES",
             "type": "MA-L"
-        }])
+        }]);
     })
 })
