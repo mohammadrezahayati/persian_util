@@ -8,7 +8,7 @@ describe("Parse Number", () => {
         expect(Fa_To_En("۰۹۱۲۳۴۵۶۷۸۹")).toBe("09123456789");
     })
     test("Parse FA IP to EN", () => {
-        expect(Fa_To_En("۱۱۱.۱۱۱.۱۱۱.۱۱۱")).toBe("111.111.111.111")
+        expect(Fa_To_En("۱۱۱.۱۱۱.۱۱۱.۱۱۱")).toBe("111.111.111.111");
     })
     test("Parse Rial to Toman", () => {
         expect(Rial_To_Toman(10564523)).toBe("1056452")
