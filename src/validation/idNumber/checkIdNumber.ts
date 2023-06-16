@@ -1,9 +1,9 @@
 import { Fa_To_En } from '../../parser/number/FaToEn';
 
 /**
- * get idNumber and check it if exists and valid
- * @param id
- * @returns boolean
+ * Checks if the given ID number is valid according to the Iranian national ID number format.
+ * @param {string} id - the ID number to check
+ * @returns {boolean} - true if the ID number is valid, false otherwise
  */
 export const CheckIdNumber = (id: string): boolean => {
   const regex = /^\d{10}$/g;

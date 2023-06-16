@@ -1,7 +1,15 @@
 import { describe, test, expect } from '@jest/globals';
 import { MAC } from '../mac/mac';
 
+/**
+ * A test suite for the MAC class that checks if the getMacInfo method returns the correct information.
+ * @returns None
+ */
 describe('MAC Information', () => {
+  /**
+   * Tests the MAC class by checking if the MAC information for a given MAC address is correct.
+   * @returns None
+   */
   test('Check MAC Information', async () => {
     const api = await new MAC();
     const res = await api.getMacInfo('00:23:AB:7B:58:99');

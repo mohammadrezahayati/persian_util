@@ -6,7 +6,16 @@ import {
   letterCount,
 } from '../string';
 
+/**
+ * A suite of tests for various string manipulation functions.
+ */
 describe('String', () => {
+  /**
+   * Test the WordCount function by passing in a string of text and checking if the output
+   * matches the expected object.
+   * @param {string} words - the string of text to count the words in
+   * @returns None
+   */
   test('Word Count', () => {
     const words =
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
@@ -81,6 +90,12 @@ describe('String', () => {
       with: 2,
     });
   });
+  /**
+   * Test the letterCount function by passing in a string of text and checking that the
+   * returned object contains the correct count of each letter in the text.
+   * @param None
+   * @returns None
+   */
   test('Letter Count', () => {
     const letters =
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
@@ -121,12 +136,25 @@ describe('String', () => {
       y: 13,
     });
   });
+  /**
+   * Test function for the PersianLetterSpacing function.
+   * @param {string} sentence - The sentence to test.
+   * @returns None
+   */
   test('Letter letter spacing', () => {
     const sentence = 'متن دلخواه خود را می نویسم';
     const res = PersianLetterSpacing(sentence);
     expect(res).toBe('متن دلخواه خود را می‌نویسم');
   });
+  /**
+   * A test suite for the RemoveSpace function.
+   */
   describe('text parser', () => {
+    /**
+     * Removes all spaces from the given text.
+     * @param {string} text - The text to remove spaces from.
+     * @returns {string} The text with all spaces removed.
+     */
     test('remove all space on text', () => {
       expect(RemoveSpace('the  star wa rrrr ssss  !')).toBe(
         'thestarwarrrrssss!'

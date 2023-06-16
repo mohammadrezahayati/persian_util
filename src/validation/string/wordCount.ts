@@ -1,8 +1,9 @@
 import { WordCountType } from '../../types/string/wordCount';
 
 /**
- * This function get an sentence and count all duplicated words
- * @param Sentence
+ * Takes in a sentence and returns an object containing the count of each word in the sentence.
+ * @param {string} sentence - the sentence to count the words in
+ * @returns {WordCountType} - an object containing the count of each word in the sentence
  */
 export const WordCount = (sentence: string) => {
   const splitSentence = sentence.match(/(\w+)/g) ?? '';
