@@ -3,9 +3,9 @@ import { Fa_To_En } from '../../parser/number/FaToEn';
 import { idNumberFindType, idNumberByCityType } from '../../types/idNumber';
 
 /**
- * get idNumber and check it if true return province and city
- * @param id
- * @returns object : { province: "", city: "" }
+ * Finds the province and city associated with the given ID number.
+ * @param {string} id - The ID number to search for.
+ * @returns {idNumberFindType | undefined | boolean} - An object containing the province and city if found, false if not found, or undefined if the input is invalid.
  */
 export const IdNumberFind = (
   id: string

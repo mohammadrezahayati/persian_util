@@ -1,7 +1,7 @@
 /**
- * Give it persian sentences and remove all space between some letter
- * @param sentence : string
- * @returns
+ * Adds Persian letter spacing to the given sentence.
+ * @param {string} sentence - The sentence to add Persian letter spacing to.
+ * @returns The sentence with Persian letter spacing added.
  */
 export const PersianLetterSpacing = (sentence: string) => {
   return sentence

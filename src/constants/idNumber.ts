@@ -1,5 +1,17 @@
+/**
+ * Imports the idNumberByCityType type from the '../types/idNumber' module.
+ * @returns The idNumberByCityType type.
+ */
 import { idNumberByCityType } from '../types/idNumber';
 
+/**
+ * An array of objects containing ID number ranges for each city in Iran.
+ * @typedef {Object} idNumberByCityType
+ * @property {string} province - The name of the province the city is in.
+ * @property {string} city - The name of the city.
+ * @property {string} from - The starting ID number for the city.
+ * @property {string} to - The ending ID number for the city.
+ */
 export const idNumbersByCity: idNumberByCityType[] = [
   {
     province: 'آذربایجان شرقی',

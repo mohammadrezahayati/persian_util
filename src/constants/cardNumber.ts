@@ -1,3 +1,7 @@
+/**
+ * An array of objects representing various banks in Iran. Each object contains the name of the bank and its ID.
+ * @type {Array<{name: string, id: number}>}
+ */
 export const banks = [
   { name: 'ملت', id: 610433 },
   { name: 'آینده', id: 636214 },

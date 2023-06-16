@@ -3,9 +3,9 @@ import { Fa_To_En } from '../../parser/number/FaToEn';
 import { PostalCodeFindType } from '../../types/postalCode/postalCodeFind';
 
 /**
- * get postalCode and check it if valid return province and city of postalCode
- * @param code string
- * @returns
+ * Finds the province and city of a given postal code.
+ * @param {string} code - The postal code to search for.
+ * @returns {PostalCodeFindType | undefined | boolean} - An object containing the province and city of the postal code, or undefined if the postal code is not found, or false if the input is invalid.
  */
 export const PostalCodeFind = (
   code: string

@@ -1,5 +1,14 @@
+/**
+ * Import statement to bring in the postalCodeType from the types module.
+ * @module
+ */
 import { postalCodeType } from '../types';
 
+/**
+ * An array of objects representing postal codes for various cities in Iran.
+ * Each object contains the province, city, and range of postal codes for that city.
+ * @type {postalCodeType[]}
+ */
 export const postalCodes: postalCodeType[] = [
   { province: 'آذربایجان شرقی', city: 'تبریز', from: '۵۱۳۳۱', to: '۵۱۹۹۹' },
   { province: 'آذربایجان شرقی', city: 'میانه', from: '۵۳۱۳۱', to: '۵۳۴۹۱' },

@@ -1,5 +1,13 @@
+/**
+ * Import statement to bring in the phoneNumberListType type from the types module.
+ */
 import { phoneNumberListType } from '../types';
 
+/**
+ * An array of objects representing the phone number prefixes for different provinces in Iran.
+ * Each object contains the name of the province and the corresponding phone number prefix.
+ * @type {phoneNumberListType[]}
+ */
 export const PhoneNumberList: phoneNumberListType[] = [
   { province: 'تهران', number: '021' },
   { province: 'البرز', number: '026' },

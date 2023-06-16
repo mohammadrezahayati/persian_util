@@ -1,8 +1,9 @@
 import { LetterCountType } from '../../types/string/letterCount';
 
 /**
- * This function get an sentence and count all duplicated letter
- * @param Sentence
+ * Takes in a string and returns an object containing the count of each letter in the string.
+ * @param {string} letter - the string to count the letters of
+ * @returns An object containing the count of each letter in the string.
  */
 export const letterCount = (letter: string) => {
   const letterFix = letter.match(/(\w)/g) ?? '';
