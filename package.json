@@ -1,6 +1,6 @@
 {
   "name": "persian_util",
-  "version": "1.0.40",
+  "version": "1.0.41",
   "description": "A repository for the Persian programmer community",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -17,7 +17,13 @@
   },
   "repository": "git+https://github.com/mohammadrezahayati/persian_util.git",
   "keywords": [
-    "persian_util"
+    "persian_util",
+    "validation",
+    "persian_validation",
+    "persian",
+    "convertor",
+    "parser",
+    "util"
   ],
   "author": "mohammadreza hayati",
   "license": "MIT",
