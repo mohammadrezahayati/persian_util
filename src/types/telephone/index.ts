@@ -1,1 +1,1 @@
-export * from "./telephoneList"
+export * from './telephoneList';

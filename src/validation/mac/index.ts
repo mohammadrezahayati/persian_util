@@ -1,1 +1,1 @@
-export * from "./mac";
+export * from './mac';

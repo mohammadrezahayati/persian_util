@@ -3,4 +3,5 @@
  * @param number @type @number
  * @returns string
  */
-export const Rial_To_Toman = (number: number): string => (number / 10).toFixed(0);
+export const Rial_To_Toman = (number: number): string =>
+  (number / 10).toFixed(0);

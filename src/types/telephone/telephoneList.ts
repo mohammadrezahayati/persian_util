@@ -1,4 +1,4 @@
 export interface phoneNumberListType {
-    province: string;
-    number: string;
-} 
+  province: string;
+  number: string;
+}

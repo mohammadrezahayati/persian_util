@@ -1,1 +1,1 @@
-export *  from "./findPostalCode";
+export * from './findPostalCode';

@@ -1,4 +1,9 @@
-import { ErrorFuncType, ErrorExpectedType, ErrorMessageType, ErrorMethodType } from "../types/error";
+import {
+  ErrorFuncType,
+  ErrorExpectedType,
+  ErrorMessageType,
+  ErrorMethodType,
+} from '../types/error';
 
 /**
  * Err class is an Error handling class to check your method or variable or anything you want and returned expected message and error
@@ -6,120 +11,123 @@ import { ErrorFuncType, ErrorExpectedType, ErrorMessageType, ErrorMethodType } f
  * @param U type of expected returned type
  * @param M type of message
  */
-export class Err<T, U, M>{
-    /**
-     * @property method is an method or property you want to validate
-     */
-    method;
+export class Err<T, U, M> {
+  /**
+   * @property method is an method or property you want to validate
+   */
+  method;
 
-    /**
-     * @property expected is an something you want to validate quality to return element in method property
-     */
-    #expected;
+  /**
+   * @property expected is an something you want to validate quality to return element in method property
+   */
+  #expected;
 
-    /**
-     * @property ErrorFunc is an method when method returned false this specific class constructor run
-     */
-    #ErrorFunc?;
+  /**
+   * @property ErrorFunc is an method when method returned false this specific class constructor run
+   */
+  #ErrorFunc?;
 
-    /**
-     * @property message is an property you want to returned as message to user
-     */
-    #message?;
+  /**
+   * @property message is an property you want to returned as message to user
+   */
+  #message?;
 
-    /**
-     * 
-     * @param method is an method or property you want to validate
-     * @param expected is an something you want to validate quality to return element in method property
-     * @param ErrorFunc is an method when method returned false this specific class constructor run
-     * @param message is an property you want to returned as message to user
-     */
-    constructor(method: ErrorMethodType<T>, expected: ErrorExpectedType<U>, ErrorFunc?: ErrorFuncType, message?: ErrorMessageType<M>) {
-        this.method = method;
-        this.#expected = expected;
-        this.#ErrorFunc = ErrorFunc;
-        this.#message = message;
-    }
-    /**
-     * this method get all error if you have any error
-     * @return object if have any error 
-     * @return true if anything will be fine
-     */
-    getError = () => {
-        try {
-            if (this.method === this.#expected) {
-                return true;
-            }
-            if (this.method !== this.#expected) {
-                if (this.#ErrorFunc !== undefined) {
-                    throw this.#ErrorFunc;
-                }
-            }
-            throw new Error()
-        } catch (err) {
-            if (err instanceof Error) {
-                return {
-                    errorType: typeof err,
-                    customMessage: this.#message,
-                    message: err.message,
-                    errorName: err.name,
-                    stack: err.stack,
-                    expected: `expected ${this.#expected} but get ${err.name}`
-                };
-            }
-            if (err instanceof RangeError) {
-                return {
-                    errorType: typeof err,
-                    customMessage: this.#message,
-                    message: err.message,
-                    errorName: err.name,
-                    stack: err.stack,
-                    expected: `expected ${this.#expected} but get ${err.name}`
-                };
-            }
-            if (err instanceof EvalError) {
-                return {
-                    errorType: typeof err,
-                    customMessage: this.#message,
-                    message: err.message,
-                    errorName: err.name,
-                    stack: err.stack,
-                    expected: `expected ${this.#expected} but get ${err.name}`
-                };
-            }
-            if (err instanceof ReferenceError) {
-                return {
-                    errorType: typeof err,
-                    customMessage: this.#message,
-                    message: err.message,
-                    errorName: err.name,
-                    stack: err.stack,
-                    expected: `expected ${this.#expected} but get ${err.name}`
-                };
-            }
-            if (err instanceof SyntaxError) {
-                return {
-                    errorType: typeof err,
-                    customMessage: this.#message,
-                    message: err.message,
-                    errorName: err.name,
-                    stack: err.stack,
-                    expected: `expected ${this.#expected} but get ${err.name}`
-                };
-            }
-            if (err instanceof URIError) {
-                return {
-                    errorType: typeof err,
-                    customMessage: this.#message,
-                    message: err.message,
-                    errorName: err.name,
-                    stack: err.stack,
-                    expected: `expected ${this.#expected} but get ${err.name}`
-                };
-            }
-            return err;
+  /**
+   *
+   * @param method is an method or property you want to validate
+   * @param expected is an something you want to validate quality to return element in method property
+   * @param ErrorFunc is an method when method returned false this specific class constructor run
+   * @param message is an property you want to returned as message to user
+   */
+  constructor(
+    method: ErrorMethodType<T>,
+    expected: ErrorExpectedType<U>,
+    ErrorFunc?: ErrorFuncType,
+    message?: ErrorMessageType<M>
+  ) {
+    this.method = method;
+    this.#expected = expected;
+    this.#ErrorFunc = ErrorFunc;
+    this.#message = message;
+  }
+  /**
+   * this method get all error if you have any error
+   * @return object if have any error
+   * @return true if anything will be fine
+   */
+  getError = () => {
+    try {
+      if (this.method === this.#expected) {
+        return true;
+      }
+      if (this.method !== this.#expected) {
+        if (this.#ErrorFunc !== undefined) {
+          throw this.#ErrorFunc;
         }
+      }
+      throw new Error();
+    } catch (err) {
+      if (err instanceof Error) {
+        return {
+          errorType: typeof err,
+          customMessage: this.#message,
+          message: err.message,
+          errorName: err.name,
+          stack: err.stack,
+          expected: `expected ${this.#expected} but get ${err.name}`,
+        };
+      }
+      if (err instanceof RangeError) {
+        return {
+          errorType: typeof err,
+          customMessage: this.#message,
+          message: err.message,
+          errorName: err.name,
+          stack: err.stack,
+          expected: `expected ${this.#expected} but get ${err.name}`,
+        };
+      }
+      if (err instanceof EvalError) {
+        return {
+          errorType: typeof err,
+          customMessage: this.#message,
+          message: err.message,
+          errorName: err.name,
+          stack: err.stack,
+          expected: `expected ${this.#expected} but get ${err.name}`,
+        };
+      }
+      if (err instanceof ReferenceError) {
+        return {
+          errorType: typeof err,
+          customMessage: this.#message,
+          message: err.message,
+          errorName: err.name,
+          stack: err.stack,
+          expected: `expected ${this.#expected} but get ${err.name}`,
+        };
+      }
+      if (err instanceof SyntaxError) {
+        return {
+          errorType: typeof err,
+          customMessage: this.#message,
+          message: err.message,
+          errorName: err.name,
+          stack: err.stack,
+          expected: `expected ${this.#expected} but get ${err.name}`,
+        };
+      }
+      if (err instanceof URIError) {
+        return {
+          errorType: typeof err,
+          customMessage: this.#message,
+          message: err.message,
+          errorName: err.name,
+          stack: err.stack,
+          expected: `expected ${this.#expected} but get ${err.name}`,
+        };
+      }
+      return err;
     }
-
+  };
 }
-

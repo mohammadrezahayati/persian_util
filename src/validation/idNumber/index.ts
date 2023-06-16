@@ -1,2 +1,2 @@
-export * from "./checkIdNumber"
-export * from "./findIdNumber"
+export * from './checkIdNumber';
+export * from './findIdNumber';

@@ -1,3 +1,3 @@
 export interface LetterCountType {
-    [index: string]: number;
+  [index: string]: number;
 }

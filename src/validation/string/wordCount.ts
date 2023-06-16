@@ -1,19 +1,19 @@
-import { WordCountType } from "../../types/string/wordCount";
+import { WordCountType } from '../../types/string/wordCount';
 
 /**
- * This function get an sentence and count all duplicated words 
- * @param Sentence 
+ * This function get an sentence and count all duplicated words
+ * @param Sentence
  */
 export const WordCount = (sentence: string) => {
-    const splitSentence = sentence.match(/(\w+)/g) ?? "";
-    const words: WordCountType = {};
-    for (let i = 0; i < splitSentence.length; i++) {
-        const word = splitSentence[i];
-        if (!words[word]) {
-            words[word] = 1;
-        } else {
-            words[word]++
-        }
+  const splitSentence = sentence.match(/(\w+)/g) ?? '';
+  const words: WordCountType = {};
+  for (let i = 0; i < splitSentence.length; i++) {
+    const word = splitSentence[i];
+    if (!words[word]) {
+      words[word] = 1;
+    } else {
+      words[word]++;
     }
-    return words;
-}
+  }
+  return words;
+};

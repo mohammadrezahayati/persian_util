@@ -1,2 +1,2 @@
-export * from "./cardBank"
-export * from "./checkCardNumber"
+export * from './cardBank';
+export * from './checkCardNumber';
