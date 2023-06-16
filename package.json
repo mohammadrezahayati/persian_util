@@ -1,6 +1,6 @@
 {
   "name": "persian_util",
-  "version": "1.0.36",
+  "version": "1.0.37",
   "description": "A repository for the Persian programmer community",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -38,7 +38,6 @@
     "@typescript-eslint/eslint-plugin": "^5.34.0",
     "@typescript-eslint/parser": "^5.34.0",
     "axios": "^1.4.0",
-    "date-holidays": "^3.19.0",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1"
