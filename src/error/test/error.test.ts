@@ -23,9 +23,9 @@ describe('Error', () => {
      */
     const error = new Err(
       CardBank('5022291044444444'),
-      "asd", SyntaxError(), "asdasd"
+      "پاسارگاد", SyntaxError(), "asdasd"
     );
-    console.log(CardBank('5022291044444444'))
+    
     /**
      * Gets the error value from an error object and checks if it is true.
      * @param {Error} error - The error object to check.
@@ -41,8 +41,8 @@ describe('Error', () => {
      * @returns A new error object.
      */
     const error1 = new Err(
-      CardBank('5022291045666785'),
-      "پاسارگاد",
+      CardBank('603799۱۸۴۵۶۷۴۵۶۷'),
+      "ملی ایران",
       ReferenceError(),
       'some message'
     );
@@ -51,6 +51,6 @@ describe('Error', () => {
      * @param {Error} error1 - The error object to test.
      * @returns None
      */
-    expect(error1.getError()).toBe(false);
+   expect(error1.getError()).toBe(false);
   });
-});
+})
