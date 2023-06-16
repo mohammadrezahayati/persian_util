@@ -1,6 +1,6 @@
 {
   "name": "persian_util",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "description": "A repository for the Persian programmer community",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -20,7 +20,7 @@
     "persian_util"
   ],
   "author": "mohammadreza hayati",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mohammadrezahayati/persian_util/issues"
   },
