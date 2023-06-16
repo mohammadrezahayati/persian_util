@@ -23,7 +23,7 @@ export * as types from './types';
  * This statement exports all the named exports from the './error' module as named exports of the current module.
  * This allows for easy access to all the exports of the './error' module from other modules that import from this module.
  */
-export * as Error from './error';
+export * as Err from './error';
 /**
  * This statement exports all the named exports from the './error/error' module.
  * @returns All named exports from the './error/error' module.
