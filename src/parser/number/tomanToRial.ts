@@ -1,4 +1,3 @@
-
 /**
  * This Function get a number base on Toman and change it to Rial and return it.
  * @param number @type @number

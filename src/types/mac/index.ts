@@ -1,1 +1,1 @@
-export * from "./macApi";
+export * from './macApi';

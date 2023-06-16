@@ -1,2 +1,2 @@
-export * from "./postalCode"
-export * from "./postalCodeFind"
+export * from './postalCode';
+export * from './postalCodeFind';

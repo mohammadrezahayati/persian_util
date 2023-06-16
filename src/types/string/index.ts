@@ -1,2 +1,2 @@
-export * from "./letterCount"
-export * from "./wordCount"
+export * from './letterCount';
+export * from './wordCount';

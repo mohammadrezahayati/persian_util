@@ -1,3 +1,3 @@
 export interface WordCountType {
-    [index: string]: number;
+  [index: string]: number;
 }
