@@ -1,6 +1,6 @@
 {
   "name": "persian_util",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "description": "A repository for the Persian programmer community",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -21,6 +21,7 @@
     "validation",
     "persian_validation",
     "persian",
+    "iran",
     "convertor",
     "parser",
     "util",
