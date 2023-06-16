@@ -43,8 +43,8 @@ describe('Error', () => {
     const error1 = new Err(
       CardBank('603799۱۸۴۵۶۷۴۵۶۷'),
       "ملی ایران",
-      ReferenceError(),
-      'some message'
+      undefined,
+      "your message"
     );
     /**
      * Expects the `getError()` method of an error object to return `true`.
