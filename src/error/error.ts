@@ -3,6 +3,7 @@ import {
   ErrorExpectedType,
   ErrorMessageType,
   ErrorMethodType,
+  findErrorType,
 } from '../types/error';
 
 /**
@@ -51,6 +52,44 @@ export class Err<T, U, M> {
     this.#message = message;
   }
   /**
+   * this method get error type if you have any error
+   * @return name of error
+   * @return true if anything will be fine
+   */
+  #findError = (error: findErrorType) => {
+
+    if (error instanceof RangeError) {
+      return {
+        errorType: "RangeError",
+      };
+    }
+    if (error instanceof EvalError) {
+      return {
+        errorType: "EvalError",
+      };
+    }
+    if (error instanceof ReferenceError) {
+      return {
+        errorType: "ReferenceError",
+      };
+    }
+    if (error instanceof SyntaxError) {
+      return {
+        errorType: "SyntaxError",
+      };
+    }
+    if (error instanceof URIError) {
+      return {
+        errorType: "URIError",
+      };
+    }
+    if (error instanceof Error) {
+      return {
+        errorType: 'Error',
+      };
+    }
+  }
+  /**
    * this method get all error if you have any error
    * @return object if have any error
    * @return true if anything will be fine
@@ -58,7 +97,7 @@ export class Err<T, U, M> {
   getError = () => {
     try {
       if (this.method === this.#expected) {
-        return true;
+        return false;
       }
       if (this.method !== this.#expected) {
         if (this.#ErrorFunc !== undefined) {
@@ -69,7 +108,7 @@ export class Err<T, U, M> {
     } catch (err) {
       if (err instanceof Error) {
         return {
-          errorType: typeof err,
+          errorType: this.#findError(err),
           customMessage: this.#message,
           message: err.message,
           errorName: err.name,
@@ -79,7 +118,7 @@ export class Err<T, U, M> {
       }
       if (err instanceof RangeError) {
         return {
-          errorType: typeof err,
+          errorType: this.#findError(err),
           customMessage: this.#message,
           message: err.message,
           errorName: err.name,
@@ -89,7 +128,7 @@ export class Err<T, U, M> {
       }
       if (err instanceof EvalError) {
         return {
-          errorType: typeof err,
+          errorType: this.#findError(err),
           customMessage: this.#message,
           message: err.message,
           errorName: err.name,
@@ -99,7 +138,7 @@ export class Err<T, U, M> {
       }
       if (err instanceof ReferenceError) {
         return {
-          errorType: typeof err,
+          errorType: this.#findError(err),
           customMessage: this.#message,
           message: err.message,
           errorName: err.name,
@@ -109,7 +148,7 @@ export class Err<T, U, M> {
       }
       if (err instanceof SyntaxError) {
         return {
-          errorType: typeof err,
+          errorType: this.#findError(err),
           customMessage: this.#message,
           message: err.message,
           errorName: err.name,
@@ -119,7 +158,7 @@ export class Err<T, U, M> {
       }
       if (err instanceof URIError) {
         return {
-          errorType: typeof err,
+          errorType: this.#findError(err),
           customMessage: this.#message,
           message: err.message,
           errorName: err.name,

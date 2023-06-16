@@ -1,3 +1,4 @@
+import { Fa_To_En } from './../../parser/number/FaToEn';
 import { banks } from '../../constants/cardNumber';
 
 /**
@@ -7,7 +8,7 @@ import { banks } from '../../constants/cardNumber';
  */
 export const CheckCardNumber = (CardNumber: string): boolean => {
   const CardNumberRegex = /^\d{4}?[\s.-]?\d{4}?[\s.-]?\d{4}?[\s.-]?\d{4}$/g;
-  if (CardNumberRegex.test(CardNumber)) {
+  if (CardNumberRegex.test(Fa_To_En(CardNumber))) {
     CardNumber = CardNumber.replace(/[\s.-]/g, '');
     CardNumber = CardNumber.slice(0, 6);
     const bankName = banks.find((item) => item.id === +CardNumber);

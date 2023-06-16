@@ -277,3 +277,36 @@ import { validation } from 'persian_util';
 validation.RemoveSpace("the  star wa rrrr ssss  !")// -> return -> "thestarwarrrrssss!");
  */
 ```
+
+
+# Error Handling :
+you can use this class to handle your error 
+
+## ERR
+Is an class to handle your method to your expected value , error and message
+
+```javascript
+Err("your method" , 
+    "expected return value" , 
+    "your error function and its optional" ,
+   " your message to return when has a error and its optional")
+```
+type of error function must be :( RangeError | EvalError | ReferenceError | SyntaxError | URIError | Error | undefined )
+
+```javascript
+import { Err,validation } from 'persian_util';
+    const error = new Err(validation.CardBank('5022291044444444'),"پاسارگاد", SyntaxError(), "your message");
+    error.getError()  //if you have no error return false otherwise return object of your expected error
+
+    // if you don't wanna to pass message or error function just need leave it empty
+    const error = new Err(validation.CardBank('5022291044444444'),"پاسارگاد");
+    error.getError()  //if you have no error return false otherwise return object of your expected error
+   
+   // if you don't wanna to pass error function but need the message to return you need to pass undefined to error function
+    const error = new Err(validation.CardBank('5022291044444444'),"پاسارگاد" , undefined , "your message");
+    error.getError()  //if you have no error return false otherwise return object of your expected error
+ */
+```
+
+
+
