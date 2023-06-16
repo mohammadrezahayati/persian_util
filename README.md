@@ -3,9 +3,12 @@
 
 ### A utility package for the Persian programmer community
 
-
-
-
+[![npm version](https://img.shields.io/npm/v/persian_util.svg?style=flat-square)](https://www.npmjs.org/package/persian_util)
+[![install size](https://img.shields.io/badge/dynamic/json?url=https://packagephobia.com/v2/api.json?p=persian_util&query=$.install.pretty&label=install%20size&style=flat-square)](https://packagephobia.now.sh/result?p=persian_util)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/persian_util?style=flat-square)](https://bundlephobia.com/package/persian_util@latest)
+[![npm downloads](https://img.shields.io/npm/dm/persian_util.svg?style=flat-square)](https://npm-stat.com/charts.html?package=persian_util)
+[![code helpers](https://www.codetriage.com/persian_util/persian_util/badges/users.svg)](https://www.codetriage.com/persian_util/persian_util)
+[![Known Vulnerabilities](https://snyk.io/test/npm/persian_util/badge.svg)](https://snyk.io/test/npm/persian_util)
 
 # Usage/Examples
 
