@@ -5,9 +5,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "main" , "dev" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "main" , "dev" ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -29,4 +29,3 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - run: npm run test:coverall
