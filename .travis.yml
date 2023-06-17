@@ -6,6 +6,6 @@ node_js:
   - node
 
 script:
-  - npm run test:coverall
+  - npm run coveralls
 after_success:
   - npm run ci
