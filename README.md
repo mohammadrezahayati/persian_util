@@ -10,7 +10,6 @@
 [![code helpers](https://www.codetriage.com/mohammadrezahayati/persian_util/badges/users.svg)](https://www.codetriage.com/persian_util/persian_util)
 [![Known Vulnerabilities](https://snyk.io/test/npm/persian_util/badge.svg)](https://snyk.io/test/npm/persian_util)
 [![jsDeliver](https://data.jsdelivr.com/v1/package/npm/persian_util/badge)](https://www.jsdelivr.com/package/npm/persian_util)
-[![Coverage Status](https://coveralls.io/repos/github/mohammadrezahayati/persian_util/badge.svg?branch=main)](https://coveralls.io/github/mohammadrezahayati/persian_util?branch=main)
 
 # Usage/Examples
 
