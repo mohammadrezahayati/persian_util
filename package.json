@@ -9,7 +9,6 @@
   ],
   "scripts": {
     "test": "jest",
-    "test:coverall": "jest --coverage && coveralls < coverage/lcov.info",
     "test-watch": "jest --watchAll",
     "build": "tsc",
     "watch": "tsc -w",
