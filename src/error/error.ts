@@ -1,3 +1,7 @@
+/**
+ * Importing the necessary types for handling errors.
+ * @import {ErrorFuncType, ErrorExpectedType, ErrorMessageType, ErrorMethodType, findErrorType} from '../types/error';
+ */
 import {
   ErrorFuncType,
   ErrorExpectedType,
@@ -52,9 +56,9 @@ export class Err<T, U, M> {
     this.#message = message;
   }
   /**
-   * this method get error type if you have any error
-   * @return name of error
-   * @return true if anything will be fine
+   * Determines the type of error that was thrown and returns an object with the error type.
+   * @param {findErrorType} error - the error object to analyze
+   * @returns An object with the error type.
    */
   #findError = (error: findErrorType) => {
 
