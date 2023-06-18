@@ -26,7 +26,7 @@ describe('Card', () => {
      * @param {string} cardNumber - the card number to parse
      * @returns {string} - the parsed card number without any dashes or spaces
      * @example
-     * // returns '1111222233334444'
+     * @returns '1111222233334444'
      * CardNumberParse('1111-2222-3333-4444')
      */
     expect(CardNumberParse('1111-2222-3333-4444')).toStrictEqual(
@@ -45,7 +45,7 @@ describe('Card', () => {
      * @param {string} cardNumber - the card number string to parse
      * @returns {string} - a string of only digits
      * @example
-     * // returns '1111222233334444'
+     * @returns '1111222233334444'
      * CardNumberParse('۱۱۱۱.۲۲۲۲.۳۳۳۳.۴۴۴۴')
      */
     expect(CardNumberParse('۱۱۱۱.۲۲۲۲.۳۳۳۳.۴۴۴۴')).toStrictEqual(
