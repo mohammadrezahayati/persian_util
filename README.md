@@ -306,6 +306,7 @@ import { Err,validation } from 'persian_util';
    // if you don't wanna to pass error function but need the message to return you need to pass undefined to error function
     const error = new Err(validation.CardBank('5022291044444444'),"پاسارگاد" , undefined , "your message");
     error.getError()  //if you have no error return false otherwise return object of your expected error
+    
 ```
 
 
