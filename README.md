@@ -307,6 +307,7 @@ import { Err,validation } from 'persian_util';
     const error = new Err(validation.CardBank('5022291044444444'),"پاسارگاد" , undefined , "your message");
     error.getError()  //if you have no error return false otherwise return object of your expected error
     
+    
 ```
 
 
