@@ -24,7 +24,6 @@ export function dateDiffInDays(a: Date, b: Date) {
     return Math.floor((utc2 - utc1) / _MS_PER_DAY);
 }
 
-// test it
 const a = new Date("2017-01-01"),
     b = new Date("2017-06-25"),
     difference = dateDiffInDays(a, b);
