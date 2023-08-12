@@ -18,9 +18,7 @@ export function dateDiffInDays(a: Date, b: Date) {
     `_MS_PER_DAY`. */
     const _MS_PER_DAY = 1000 * 60 * 60 * 24;
     
-   /* The lines `const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());` and `const utc2 =
-   Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());` are calculating the UTC (Coordinated
-   Universal Time) values for the given dates `a` and `b`. */
+   
     const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
     const utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
 
