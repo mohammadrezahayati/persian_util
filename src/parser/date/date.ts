@@ -25,10 +25,7 @@ export function dateDiffInDays(a: Date, b: Date) {
     return Math.floor((utc2 - utc1) / _MS_PER_DAY);
 }
 
-/* The code is creating two Date objects, `a` and `b`, representing the dates "2017-01-01" and
-"2017-06-25" respectively. It then calls the `dateDiffInDays` function, passing in `a` and `b` as
-arguments, to calculate the difference in days between the two dates. The result is stored in the
-variable `difference`. */
+
 const a = new Date("2017-01-01"),
     b = new Date("2017-06-25"),
     difference = dateDiffInDays(a, b);
