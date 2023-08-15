@@ -2,6 +2,7 @@ import { En_To_Fa } from './../number/EnToFa';
 //duration
 //change time to some format
 //change format to real time
+// some comments
 
 /**
  * The function calculates the difference in days between two given dates.
