@@ -31,6 +31,17 @@ checked if the card number is valid and returned it to right format
 ```javascript
 import { parse } from 'persian_util';
 
+const a = new Date("2017-01-01"),
+            b = new Date("2017-06-25"),
+            difference = parse.DateDiffInDays(a, b);
+        const test  = En_To_Fa(`${difference}`) // -> return -> "175" -> number of diff "175 days"
+
+```
+## Date :
+checked Difference between two specific date
+```javascript
+import { parse } from 'persian_util';
+
 parse.CardNumberParse("1111-2222-3333-4444")// -> return -> "1111222233334444"
 parse.CardNumberParse("1111 2222 3333 4444")// -> return -> "1111222233334444"
 parse.CardNumberParse("۱۱۱۱.۲۲۲۲.۳۳۳۳.۴۴۴۴")// -> return -> "1111222233334444"
