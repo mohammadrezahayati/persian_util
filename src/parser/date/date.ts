@@ -1,5 +1,5 @@
 import { En_To_Fa } from './../number/EnToFa';
-//duration
+
 //change time to some format
 //change format to real time
 
