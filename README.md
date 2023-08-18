@@ -107,6 +107,14 @@ validation.CheckCardNumber("6037 9918 3333 4444")// -> return -> true
 validation.CheckCardNumber("5859831133334444")// -> return -> true
 validation.CheckCardNumber("5022-2910-3333-4444")// -> return -> true
 ```
+### Deep Check Card Number :
+Check card number of user, We use specific algorithm to validate without any dependency If it's valid return true otherwise return false
+```javascript
+import { validation } from 'persian_util';
+
+validation.CardNumberDeepCheck("5859831133334444")// -> return -> false
+
+```
 ### Bank Card name :
 Check card number of user, If it's valid return name of card bank
 ```javascript
