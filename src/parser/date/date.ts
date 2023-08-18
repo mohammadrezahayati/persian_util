@@ -1,8 +1,3 @@
-import { En_To_Fa } from './../number/EnToFa';
-
-//change time to some format
-//change format to real time
-
 /**
  * The function calculates the difference in days between two given dates.
  * @param {Date} a - The parameter "a" is a Date object representing the first date.
@@ -16,9 +11,3 @@ export const dateDiffInDays = (a: Date, b: Date) => {
     const utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
     return Math.floor((utc2 - utc1) / _MS_PER_DAY);
 }
-
-const a = new Date("2017-01-01"),
-    b = new Date("2017-06-25"),
-    difference = dateDiffInDays(a, b);
-
-console.log(`${En_To_Fa(`${difference}`)}  روز`)

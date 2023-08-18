@@ -14,5 +14,5 @@ export const CardNumberDeepCheck = (CardNumber: string): boolean => {
     const oddNumberValue = oddNumberKey.map((item, index) => numbers[+oddNumberKey[index]]);
     const evenNumberValue = evenNumberKey.map((item, index) => numbers[+evenNumberKey[index]]);
     const multiple = [...evenNumberValue.map((element) => +element * 2 > 9 ? (+element * 2) - 9 : +element * 2), ...oddNumberValue.map((element) => +element * 1)].reduce((accumulator, currentValue) => accumulator + currentValue)
-    return multiple % 10 === 0 ? true : false
+    return multiple % 10 === 0 ? true : false;
 }
