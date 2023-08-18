@@ -1,5 +1,6 @@
 import { describe, test, expect } from '@jest/globals';
 import { CardBank, CheckCardNumber } from '../cardNumber';
+import { CardNumberDeepCheck } from '../cardNumber/cardNumberDeepCheck';
 
 /**
  * A test suite for the Card component.
@@ -47,5 +48,11 @@ describe('Card', () => {
      * @throws {Error} If the CardBank function does not return the expected result.
      */
     expect(CardBank('5022293345678976')).toStrictEqual('پاسارگاد');
+  });
+  /* The code is testing the `CardNumberDeepCheck` function to ensure that it correctly identifies a
+  deep check failure for a given card number. It expects the function to return `false` when the
+  card number is provided in a non-numeric format (using Persian digits). */
+  test('Bank Card Deep Check', () => {
+    expect(CardNumberDeepCheck('5012121212121212')).toBeFalsy();
   });
 });

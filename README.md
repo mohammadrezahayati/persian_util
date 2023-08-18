@@ -31,6 +31,17 @@ checked if the card number is valid and returned it to right format
 ```javascript
 import { parse } from 'persian_util';
 
+const a = new Date("2017-01-01"),
+            b = new Date("2017-06-25"),
+            difference = parse.DateDiffInDays(a, b);
+        const test  = En_To_Fa(`${difference}`) // -> return -> "175" -> number of diff "175 days"
+
+```
+## Date :
+checked Difference between two specific date
+```javascript
+import { parse } from 'persian_util';
+
 parse.CardNumberParse("1111-2222-3333-4444")// -> return -> "1111222233334444"
 parse.CardNumberParse("1111 2222 3333 4444")// -> return -> "1111222233334444"
 parse.CardNumberParse("۱۱۱۱.۲۲۲۲.۳۳۳۳.۴۴۴۴")// -> return -> "1111222233334444"
@@ -106,6 +117,14 @@ import { validation } from 'persian_util';
 validation.CheckCardNumber("6037 9918 3333 4444")// -> return -> true
 validation.CheckCardNumber("5859831133334444")// -> return -> true
 validation.CheckCardNumber("5022-2910-3333-4444")// -> return -> true
+```
+### Deep Check Card Number :
+Check card number of user, We use specific algorithm to validate without any dependency If it's valid return true otherwise return false
+```javascript
+import { validation } from 'persian_util';
+
+validation.CardNumberDeepCheck("5859831133334444")// -> return -> false
+
 ```
 ### Bank Card name :
 Check card number of user, If it's valid return name of card bank
