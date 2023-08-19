@@ -6,6 +6,8 @@ import { En_To_Fa } from '../number';
 describe('Date', () => {
     /* The code is defining a test case for the `dateDiffInDays` function. */
     test('Duration', () => {
+        /* The code is creating two Date objects, `a` and `b`, representing the dates "2017-01-01" and
+        "2017-06-25" respectively. */
         const a = new Date("2017-01-01"),
             b = new Date("2017-06-25"),
             difference = DateDiffInDays(a, b);
