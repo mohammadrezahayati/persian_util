@@ -13,8 +13,3 @@ export const IBANChecker = (sheba: string) => {
     console.log(concat % BigInt(97))
     return concat % BigInt(97) === BigInt(10) ? true : false
 }
-
-
-console.log(IBANChecker("IR090560611828005430002901"));
-console.log(IBANChecker("IR270600300870014508972001"));
-console.log(IBANChecker("IR550700001000119603807001"));
