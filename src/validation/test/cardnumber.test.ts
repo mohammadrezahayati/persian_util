@@ -1,5 +1,5 @@
 import { describe, test, expect } from '@jest/globals';
-import { CardBank, CheckCardNumber } from '../cardNumber';
+import { CardBank, CheckCardNumber, IBANChecker } from '../cardNumber';
 import { CardNumberDeepCheck } from '../cardNumber/cardNumberDeepCheck';
 
 /**
@@ -54,5 +54,11 @@ describe('Card', () => {
   card number is provided in a non-numeric format (using Persian digits). */
   test('Bank Card Deep Check', () => {
     expect(CardNumberDeepCheck('5012121212121212')).toBeFalsy();
+  });
+  /* The code is testing the `IBANChecker` function to ensure that it correctly identifies a failure
+  for a given IBAN number. It expects the function to return `false` when the IBAN number provided
+  is 'IR090560611828002222222222'. */
+  test('IBAN Checker', () => {
+    expect(IBANChecker('IR090560611828002222222222')).toBeFalsy();
   });
 });
