@@ -13,3 +13,7 @@ export * from './checkCardNumber';
 the `cardNumberDeepCheck` module. This allows other modules to import and use the named exports from
 `cardNumberDeepCheck` without having to import them individually. */
 export * from './cardNumberDeepCheck';
+/* The statement `export * from './Iban';` is exporting all of the named exports from the `Iban`
+module. This allows other modules to import and use the named exports from `Iban` without having to
+import them individually. */
+export * from './Iban';
