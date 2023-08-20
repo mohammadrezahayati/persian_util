@@ -125,6 +125,14 @@ import { validation } from 'persian_util';
 validation.CardNumberDeepCheck("5859831133334444")// -> return -> false
 
 ```
+### IBAN Checker :
+IBAN number of user, We use specific algorithm to validate without any dependency If it's valid return true otherwise return false
+```javascript
+import { validation } from 'persian_util';
+
+validation.IBANChecker("IR090560611828002222222222")// -> return -> false
+
+```
 ### Bank Card name :
 Check card number of user, If it's valid return name of card bank
 ```javascript
