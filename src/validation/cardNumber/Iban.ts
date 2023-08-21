@@ -1,4 +1,3 @@
-
 /**
  * The IBANChecker function checks if a given IBAN (Sheba) number is valid.
  * @param {string} sheba - The `sheba` parameter is a string representing the Iranian bank account
