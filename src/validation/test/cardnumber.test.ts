@@ -1,5 +1,9 @@
 import { describe, test, expect } from '@jest/globals';
 import { CardBank, CheckCardNumber, IBANChecker } from '../cardNumber';
+
+/* The line `import { CardNumberDeepCheck } from '../cardNumber/cardNumberDeepCheck';` is importing the
+`CardNumberDeepCheck` function from the `cardNumberDeepCheck` module. This allows the
+`CardNumberDeepCheck` function to be used in the current module for testing purposes. */
 import { CardNumberDeepCheck } from '../cardNumber/cardNumberDeepCheck';
 
 /**
