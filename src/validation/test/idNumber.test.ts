@@ -1,4 +1,8 @@
 import { describe, expect, test } from '@jest/globals';
+
+/* The line `import { CheckIdNumber, IdNumberFind } from '../idNumber';` is importing the
+`CheckIdNumber` and `IdNumberFind` functions from the `idNumber` module. These functions are then
+used in the test cases to test their functionality. */
 import { CheckIdNumber, IdNumberFind } from '../idNumber';
 
 /**
