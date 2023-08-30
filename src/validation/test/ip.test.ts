@@ -1,4 +1,6 @@
 import { describe, test, expect } from '@jest/globals';
+/* The line `import { IP } from '../ip/ip';` is importing the `IP` class from the `../ip/ip` module.
+This allows the code to use the methods and properties defined in the `IP` class. */
 import { IP } from '../ip/ip';
 
 /**
