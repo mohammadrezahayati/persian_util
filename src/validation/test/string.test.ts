@@ -1,4 +1,9 @@
 import { describe, expect, test } from '@jest/globals';
+
+/* The `import` statement is used to import specific functions or variables from a module or file. In
+this case, it is importing the functions `PersianLetterSpacing`, `RemoveSpace`, `WordCount`, and
+`letterCount` from the `../string` file. These functions are then used in the test cases to test
+their functionality. */
 import {
   PersianLetterSpacing,
   RemoveSpace,
