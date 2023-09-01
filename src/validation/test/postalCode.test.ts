@@ -1,4 +1,8 @@
 import { describe, test, expect } from '@jest/globals';
+
+/* The line `import { PostalCodeFind } from '../postalCode/findPostalCode';` is importing the
+`PostalCodeFind` function from the `findPostalCode` module located in the `postalCode` directory.
+This allows the `PostalCodeFind` function to be used in the current module for testing purposes. */
 import { PostalCodeFind } from '../postalCode/findPostalCode';
 
 /**
