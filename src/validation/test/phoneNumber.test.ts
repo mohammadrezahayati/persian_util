@@ -1,3 +1,7 @@
+/* The line `import { isMCI, isMTN, isRightel } from '../phoneNumber';` is importing three functions
+(`isMCI`, `isMTN`, `isRightel`) from a file called `phoneNumber` located in the parent directory
+(`../`). These functions are likely used to check if a given phone number belongs to a specific
+operator (MCI, MTN, Rightel). */
 import { isMCI, isMTN, isRightel } from '../phoneNumber';
 import { describe, expect, test } from '@jest/globals';
 
