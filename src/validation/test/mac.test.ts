@@ -1,4 +1,6 @@
 import { describe, test, expect } from '@jest/globals';
+/* The line `import { MAC } from '../mac/mac';` is importing the `MAC` class from the `../mac/mac`
+module. This allows the code to use the `MAC` class and its methods in the test suite. */
 import { MAC } from '../mac/mac';
 
 /**
