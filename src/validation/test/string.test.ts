@@ -1,3 +1,6 @@
+/* The line `import { describe, expect, test } from '@jest/globals';` is importing the `describe`,
+`expect`, and `test` functions from the `@jest/globals` module. These functions are part of the Jest
+testing framework and are used to define and run test cases. */
 import { describe, expect, test } from '@jest/globals';
 
 /* The `import` statement is used to import specific functions or variables from a module or file. In

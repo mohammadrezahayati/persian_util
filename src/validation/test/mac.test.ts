@@ -1,3 +1,6 @@
+/* The line `import { describe, expect, test } from '@jest/globals';` is importing the `describe`,
+`expect`, and `test` functions from the `@jest/globals` module. These functions are part of the Jest
+testing framework and are used to define and run test cases. */
 import { describe, test, expect } from '@jest/globals';
 /* The line `import { MAC } from '../mac/mac';` is importing the `MAC` class from the `../mac/mac`
 module. This allows the code to use the `MAC` class and its methods in the test suite. */
