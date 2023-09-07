@@ -1,3 +1,5 @@
+/* The line `import axios, { AxiosInstance } from 'axios';` is importing the `axios` library and the
+`AxiosInstance` type from the `axios` module. */
 import axios, { AxiosInstance } from 'axios';
 
 /**
