@@ -1,3 +1,7 @@
+/* The `import { Fa_To_En } from '../../parser/number/FaToEn';` statement is importing the `Fa_To_En`
+function from the `FaToEn` module located in the `../../parser/number` directory. This function is
+then used in the `isRightel` function to parse a Persian number to its English equivalent before
+checking if it matches a specific pattern. */
 import { Fa_To_En } from '../../parser/number/FaToEn';
 
 /**

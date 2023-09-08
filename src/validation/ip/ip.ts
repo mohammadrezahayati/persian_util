@@ -1,5 +1,17 @@
+/* The statement `import { AxiosInstance } from 'axios';` is importing the `AxiosInstance` type from
+the `axios` module. This allows the `AxiosInstance` type to be used in the current module. The
+`AxiosInstance` type represents an instance of the Axios library, which is a popular JavaScript
+library used for making HTTP requests. */
 import { AxiosInstance } from 'axios';
+
+/* The statement `import { IpApiType } from '../../types/ip/ipApi';` is importing the `IpApiType` type
+from the `ipApi` module located in the `../../types/ip/` directory. This allows the `IpApiType` type
+to be used in the current module. */
 import { IpApiType } from '../../types/ip/ipApi';
+
+/* The `import { IpApi } from '../../webService/api/ip/Ip';` statement is importing the `IpApi` class
+from the `Ip` module located in the `../../webService/api/ip/` directory. This allows the `IpApi`
+class to be used in the current module. */
 import { IpApi } from '../../webService/api/ip/Ip';
 
 /**

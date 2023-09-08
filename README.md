@@ -11,6 +11,19 @@
 [![Known Vulnerabilities](https://snyk.io/test/npm/persian_util/badge.svg)](https://snyk.io/test/npm/persian_util)
 [![jsDeliver](https://data.jsdelivr.com/v1/package/npm/persian_util/badge)](https://www.jsdelivr.com/package/npm/persian_util)
 
+# Installing
+
+## Package manager
+
+### Using npm:
+```bash
+ npm install persian_util
+```
+### Using yarn:
+```bash
+ yarn add persian_util
+```
+
 # Usage/Examples
 
 Once the package is installed, you can import the library using import or require approach:

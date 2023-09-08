@@ -1,3 +1,6 @@
+/* The line `import { Fa_To_En } from '../../parser/number/FaToEn';` is importing the `Fa_To_En`
+function from the file located at `'../../parser/number/FaToEn'`. This function is likely
+responsible for converting Persian numbers to English numbers. */
 import { Fa_To_En } from '../../parser/number/FaToEn';
 
 /**

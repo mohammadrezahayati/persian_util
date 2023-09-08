@@ -1,5 +1,16 @@
+/* The line `import { describe, expect, test } from '@jest/globals';` is importing the `describe`,
+`expect`, and `test` functions from the `@jest/globals` module. These functions are provided by the
+Jest testing framework and are used to define test suites, test cases, and assertions in the code.
+By importing these functions, the code can use them to write and run tests for the `Err` class. */
 import { describe, expect, test } from '@jest/globals';
+
+/* The line `import { Err } from '../error';` is importing the `Err` class from the `error` module in
+the parent directory. This allows the code to use the `Err` class in the current module. */
 import { Err } from '../error';
+
+/* The line `import { CardBank } from '../../validation/cardNumber';` is importing the `CardBank` class
+from the `cardNumber` module in the `validation` directory. This allows the code to use the
+`CardBank` class in the current module. */
 import { CardBank } from '../../validation/cardNumber';
 
 /**

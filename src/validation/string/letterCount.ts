@@ -1,3 +1,7 @@
+/* The `import { LetterCountType } from '../../types/string/letterCount';` statement is importing the
+`LetterCountType` type from the `../../types/string/letterCount` file. This type is likely defined
+in that file and is used to define the structure of the object that is returned by the `letterCount`
+function. */
 import { LetterCountType } from '../../types/string/letterCount';
 
 /**
