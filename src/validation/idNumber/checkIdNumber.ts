@@ -1,3 +1,6 @@
+/* The `import { Fa_To_En } from '../../parser/number/FaToEn';` statement is importing the `Fa_To_En`
+function from the `FaToEn` module located in the `../../parser/number` directory. This function is
+used to convert Persian (Farsi) numbers to English numbers. */
 import { Fa_To_En } from '../../parser/number/FaToEn';
 
 /**

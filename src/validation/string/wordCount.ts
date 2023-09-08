@@ -1,3 +1,7 @@
+/* The `import { WordCountType } from '../../types/string/wordCount';` statement is importing the
+`WordCountType` type from the `wordCount` module located in the `../../types/string` directory. This
+type is used to define the structure of the object that will be returned by the `WordCount`
+function. */
 import { WordCountType } from '../../types/string/wordCount';
 
 /**

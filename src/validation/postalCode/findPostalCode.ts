@@ -1,5 +1,18 @@
+/* The line `import { postalCodes } from '../../constants/postalCode';` is importing the `postalCodes`
+variable from the `postalCode` module in the `constants` directory. This variable likely contains an
+array of postal code data, which is used in the `PostalCodeFind` function to search for a given
+postal code and find its corresponding province and city. */
 import { postalCodes } from '../../constants/postalCode';
+
+/* The line `import { Fa_To_En } from '../../parser/number/FaToEn';` is importing the `Fa_To_En`
+function from the `FaToEn` module in the `parser/number` directory. This function is likely used to
+convert Persian (Farsi) numbers to English numbers. */
 import { Fa_To_En } from '../../parser/number/FaToEn';
+
+/* The line `import { PostalCodeFindType } from '../../types/postalCode/postalCodeFind';` is importing
+the `PostalCodeFindType` type from the `postalCodeFind` module in the `types/postalCode` directory.
+This type is likely used to define the structure of the return value of the `PostalCodeFind`
+function. */
 import { PostalCodeFindType } from '../../types/postalCode/postalCodeFind';
 
 /**
