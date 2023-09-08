@@ -100,9 +100,13 @@ export class Err<T, U, M> {
    */
   getError = () => {
     try {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       if (this.method === this.#expected) {
         return false;
       }
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       if (this.method !== this.#expected) {
         if (this.#ErrorFunc !== undefined) {
           throw this.#ErrorFunc;
