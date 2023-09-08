@@ -17,11 +17,11 @@
 
 ### Using npm:
 ```bash
-$ npm install persian_util
+ npm install persian_util
 ```
 ### Using yarn:
 ```bash
-$ yarn add persian_util
+ yarn add persian_util
 ```
 
 # Usage/Examples
