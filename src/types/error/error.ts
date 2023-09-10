@@ -22,15 +22,15 @@ export type ErrorFuncType =
   | Error
   | undefined;
 /**
-* All type of javascript Error Function we can pass the pure Error type functions in Err class and its optional
-*/
+ * All type of javascript Error Function we can pass the pure Error type functions in Err class and its optional
+ */
 export type findErrorType =
   | RangeError
   | EvalError
   | ReferenceError
   | SyntaxError
   | URIError
-  | Error
+  | Error;
 
 /**
  * Type of the error message we want to returned
