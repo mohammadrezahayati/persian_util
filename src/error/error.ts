@@ -61,30 +61,29 @@ export class Err<T, U, M> {
    * @returns An object with the error type.
    */
   #findError = (error: findErrorType) => {
-
     if (error instanceof RangeError) {
       return {
-        errorType: "RangeError",
+        errorType: 'RangeError',
       };
     }
     if (error instanceof EvalError) {
       return {
-        errorType: "EvalError",
+        errorType: 'EvalError',
       };
     }
     if (error instanceof ReferenceError) {
       return {
-        errorType: "ReferenceError",
+        errorType: 'ReferenceError',
       };
     }
     if (error instanceof SyntaxError) {
       return {
-        errorType: "SyntaxError",
+        errorType: 'SyntaxError',
       };
     }
     if (error instanceof URIError) {
       return {
-        errorType: "URIError",
+        errorType: 'URIError',
       };
     }
     if (error instanceof Error) {
@@ -92,7 +91,7 @@ export class Err<T, U, M> {
         errorType: 'Error',
       };
     }
-  }
+  };
   /**
    * this method get all error if you have any error
    * @return object if have any error

@@ -34,9 +34,11 @@ describe('Error', () => {
      */
     const error = new Err(
       CardBank('5022291044444444'),
-      "پاسارگاد", SyntaxError(), "asdasd"
+      'پاسارگاد',
+      SyntaxError(),
+      'asdasd'
     );
-    
+
     /**
      * Gets the error value from an error object and checks if it is true.
      * @param {Error} error - The error object to check.
@@ -53,15 +55,15 @@ describe('Error', () => {
      */
     const error1 = new Err(
       CardBank('603799۱۸۴۵۶۷۴۵۶۷'),
-      "ملی ایران",
+      'ملی ایران',
       undefined,
-      "your message"
+      'your message'
     );
     /**
      * Expects the `getError()` method of an error object to return `true`.
      * @param {Error} error1 - The error object to test.
      * @returns None
      */
-   expect(error1.getError()).toBe(false);
+    expect(error1.getError()).toBe(false);
   });
-})
+});
