@@ -13,8 +13,6 @@ logs
 results
 tmp
 
-# Build
-public/css/main.css
 
 # Coverage reports
 coverage
