@@ -28,4 +28,3 @@ export * from './rialToToman';
 export * from './tomanToRial';
 
 export * from "./numberToDigits"
-export * from "./digitsToNumber"

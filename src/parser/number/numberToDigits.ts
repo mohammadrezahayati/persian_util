@@ -1,3 +1,5 @@
+import { numbers } from "../../constants/numberToWord";
+
 /* 
  TODO : Find range of number and get the length of number variable
  TODO : check the length, if had 1 , 10 , 100
@@ -19,21 +21,21 @@ export const numberToDigit = (num: number): string => {
     const digitsThirdArray = ['دویست', 'سی', 'چهار', 'پان', 'شش', 'هفت', 'هشت', 'نه']
     if (num > Number.MAX_SAFE_INTEGER || num === 0)
         throw TypeError("out of range");
-    // if (num <= 10) {
-    //     return digitsArray[num - 1]
-    // }
-    // if (10 < num && num <= 100) {
-    //     if (num === 100) {
-    //         return hundred;
-    //     }
-    //     if (num < 20 && num > 10) {
-    //         return `${digitsArray[(num % 10) - 1]} ${twoDigit}`
-    //     }
-    //     if (num % 10 === 0) {
-    //         return digitsThArray[(num / 10) - 1]
-    //     }
-    //     return `${digitsThArray[+numToString[0] - 1]} و ${digitsArray[+numToString[1] - 1]}`
-    // }
+    if (num <= 10) {
+        return numbers[num]
+    }
+    if (10 < num && num <= 100) {
+        if (num === 100) {
+            return numbers.hundred;
+        }
+        if (num < 20 && num > 10) {
+            return `${numbers[(num % 10)]}${numbers.twoDigit}`
+        }
+        if (num % 10 === 0) {
+            return numbers[num]
+        }
+        return `${numbers[+numToString[0]]} و ${numbers[+numToString[1]]}`
+    }
     // if (100 < num && num <= 1000) {
     //     if (num === 1000) {
     //         return thousand;
@@ -60,18 +62,6 @@ export const numberToDigit = (num: number): string => {
     return ''
 }
 numberToDigit(
-    909
+    88
 )
 
-const variables = {
-    billion: 'میلیارد',
-    million: 'میلیون',
-    thousand: 'هزار',
-    hundred: 'صد',
-    twoDigit: 'ده',
-    1: 'یک', 2: 'دو', 3: 'سه', 4: 'چهار', 5: 'پنج', 6: 'شش', 7: 'هفت', 8: 'هشت', 9: 'نه', 10: 'ده',
-    11: 'یازده', 12: 'دوازده', 13: 'سیزده', 14: 'چهارده', 15: 'پانزده', 16: 'شانزده', 17: "هفده", 18: 'هجده', 19: "نوزده",
-    20: 'بیست', 30: 'سی', 40: 'چهل', 50: 'پنجاه', 60: 'شصت', 70: 'هفتاد', 80: 'هشتاد', 90: 'نود',
-    100: "صد", 200: 'دویست', 300: "سی", 400: "چهار", 500: 'پان', 600: "شش", 700: "هفت", 800: "هشت", 900: "نه",
-    1000: "هزار", 1000000: "میلیون", 1000000000: "میلیارد"
-}
