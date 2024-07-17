@@ -26,3 +26,6 @@ export * from './rialToToman';
  * @returns All the functions and variables from the 'tomanToRial' module.
  */
 export * from './tomanToRial';
+
+export * from "./numberToDigits"
+export * from "./digitsToNumber"
