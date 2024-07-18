@@ -122,7 +122,7 @@ you could change any valid number to word
 import { parse } from 'persian_util';
 
 parse.numberToWord(120000002)// -> return -> "صد  و بیست میلیون دو"
-parse.numberToWord(120000000)// -> return -> "دوازده میلیارد"
+parse.numberToWord(12000000000)// -> return -> "دوازده میلیارد"
 ```
 
 # Validation :
