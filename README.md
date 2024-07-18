@@ -114,6 +114,17 @@ import { parse } from 'persian_util';
 parse.Remove_Commas("30,001,000")// -> return -> "30001000"
 ```
 
+
+### Change Number to Word:
+you could change any valid number to word
+
+```javascript
+import { parse } from 'persian_util';
+
+parse.numberToWord(120000002)// -> return -> "صد  و بیست میلیون دو"
+parse.numberToWord(120000000)// -> return -> "دوازده میلیارد"
+```
+
 # Validation :
 
 You can validate your string, postalCode, idNumber,... and anything until this time I added to this package

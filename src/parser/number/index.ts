@@ -27,4 +27,6 @@ export * from './rialToToman';
  */
 export * from './tomanToRial';
 
-export * from "./numberToDigits"
+/* The statement `export * from "./numberToWord"` is exporting all functions and variables from the
+`numberToWord` module. This allows other modules to import and use them in their own code. */
+export * from "./numberToWord"
