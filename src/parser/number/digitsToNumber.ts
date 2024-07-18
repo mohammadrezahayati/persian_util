@@ -35,10 +35,10 @@ const digitCheckerHelper = (digits: string[]): string[] => {
         if (digitToNumber < 10 && digitToNumber > 0) {
             word.push(`${numbers[digitToNumber]}`)
         }
-        else if (digitToNumber < 20 && digitToNumber > 10) {
+        else if (digitToNumber < 20 && digitToNumber >= 10) {
             word.push(`${numbers[digitToNumber]}`)
         }
-        else if (digitToNumber > 20 && digitToNumber < 100) {
+        else if (digitToNumber > 20 && digitToNumber <= 100) {
             const graterVal = +digitToNumber.toString()[0] * 10
             const smallerVal = digitToNumber - graterVal
             if (digitToNumber === 0) {
@@ -76,12 +76,24 @@ const digitCheckerHelper = (digits: string[]): string[] => {
 
         if (digitLength === 2 && digitToNumber !== 0) {
             word.push(numbers.thousand)
+            if (digitLength && digitToNumber !== 0) {
+                word.push(" و ")
+            }
+
         }
         if (digitLength === 3 && digitToNumber !== 0) {
             word.push(numbers.million)
+            if (digitLength && digitToNumber !== 0) {
+                console.log(digitLength)
+                word.push(" و ")
+            }
+
         }
         if (digitLength >= 4) {
             word.push(numbers.billion)
+            if (digitLength && digitToNumber !== 0) {
+                word.push(" و ")
+            }
         }
         digitLength--
     }
