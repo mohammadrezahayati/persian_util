@@ -29,3 +29,5 @@ export * from './string';
  * @returns All named exports from the 'ip' module.
  */
 export * from './ip';
+
+export * from "./number"
