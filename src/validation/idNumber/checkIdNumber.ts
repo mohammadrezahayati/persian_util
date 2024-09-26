@@ -11,7 +11,7 @@ import { Fa_To_En } from '../../parser/number/FaToEn';
 export const CheckIdNumber = (id: string): boolean => {
   const regex = /^\d{10}$/g;
   if (regex.test(Fa_To_En(id))) {
-    let nationId = id.toString();
+    let nationId = id?.toString();
     const idLength = nationId.length;
     const notAllowedDigits = {
       '0000000000': true,

@@ -4,4 +4,4 @@
  * @returns {string} - the number string with commas added.
  */
 export const Add_Commas = (number: string): string =>
-  number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  number?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
