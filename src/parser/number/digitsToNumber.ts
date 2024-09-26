@@ -12,7 +12,7 @@ import { Add_Commas } from "./addCommas"
  * or more parts, it returns the formatted string with "billion
  */
 export const digitsChecker = (digits: string | number): string | undefined => {
-    const digitsSplit = Add_Commas(digits.toString()).split(",")
+    const digitsSplit = Add_Commas(digits?.toString()).split(",")
     const resultDigits = digitCheckerHelper(digitsSplit)
     return resultDigits.join(" ")
 }
